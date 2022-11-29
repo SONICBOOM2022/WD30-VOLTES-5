@@ -179,25 +179,30 @@ span {
     }
 }
 
+form {
+    width: 300px;
+}
+
+
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 56px;
-    background-color: #ff6d00;
+    height: 100px;
+    background-color: rgb(255, 109, 0);
     color: white;
     text-align: center;
   }
   .footer {
     position: relative;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-content: center;
     background-position: center;
     background-repeat: no-repeat;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(255, 109, 4, 09);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
