@@ -184,12 +184,13 @@ form {
 }
 button.btn {
     transition-duration: 0.4s;
+    
   }
   
 button.btn:hover {
-    background-color: #f7ba36; 
+    background-color: rgb(255, 209, 129); 
     border-color: #ffff;
-    color: white;
+    color: rgb(255, 255, 255);
   }
 
 
