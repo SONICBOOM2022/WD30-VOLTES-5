@@ -250,6 +250,21 @@ span {
     margin-bottom: 0px;
 }
 
+.btn {
+    background-color: #dd6d00;
+    border-color: #ffd181;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color:#ffd181 ;
+    color: black;
+    border-color:#ffffff
+}
+
+
+
 form {}
 
 .wrapper .button {
