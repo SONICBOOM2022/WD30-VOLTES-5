@@ -277,7 +277,7 @@ form {}
     float: left;
     margin: 0 5px;
     overflow: hidden;
-    background: #dd6d00;
+    background:#ffd181 ;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
@@ -286,8 +286,6 @@ form {}
 
 .wrapper .button:hover {
     width: 200px;
-    
-    
    
 }
 
@@ -305,6 +303,7 @@ form {}
 .wrapper .button:nth-child(1):hover .icon {
     background: #4400ff;
     padding-right: 15px;
+    
 }
 
 .wrapper .button:nth-child(2):hover .icon {
