@@ -250,6 +250,12 @@ span {
     margin-bottom: 0px;
 }
 
+
+.row {
+    width: auto;
+}   
+
+
 .btn {
     background-color: #dd6d00;
     border-color: #ffd181;
@@ -277,15 +283,19 @@ form {}
     float: left;
     margin: 0 5px;
     overflow: hidden;
-    background:#ffd181 ;
+    background: rgb(255,255,255);
+    background: linear-gradient(36deg, rgba(255,255,255,1) 0%, rgba(255,209,129,0.819765406162465) 58%);
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
 }
 
+
+
 .wrapper .button:hover {
     width: 200px;
+    background-color: #ffffff;
    
 }
 
