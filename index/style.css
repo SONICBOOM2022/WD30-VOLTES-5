@@ -272,7 +272,7 @@ button.btn:hover {
 
 .wrapper .button .icon i {
     font-size: 2px;
-    line-height: 60px;
+    line-height: 53px;
 }
 
 .icon .fa.fa-facebook-f::before {
@@ -285,7 +285,7 @@ button.btn:hover {
 }
 
 .icon .fa.fa-twitter::before {
-    padding-left: 13px;
+    padding-left: 8px;
 }
 
 .icon .fa.fa-youtube-play::before {
