@@ -110,5 +110,10 @@ background: radial-gradient(circle, rgba(203,201,196,0.7844887955182073) 14%, rg
 .btn:hover {
     border: 1px solid black;
 }
-
+.accordion-button {
+    border-radius: 5px;
+}
+.accordion-item {
+    border-radius: 5px;
+}
 
