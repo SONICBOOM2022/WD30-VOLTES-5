@@ -280,7 +280,8 @@ button.btn:hover {
 }
 
 .icon .fa.fa-instagram::before {
-    padding-left: 13px;
+    padding-left: 8px;
+    
 }
 
 .icon .fa.fa-twitter::before {
