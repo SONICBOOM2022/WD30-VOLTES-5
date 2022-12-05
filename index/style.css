@@ -273,12 +273,14 @@ button.btn:hover {
 
 form {}
 
+
+
 .wrapper .button {
     display: inline-flex;
     text-decoration: none;
     gap: 25px;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     margin-top: 30px;
     float: left;
     margin: 0 5px;
@@ -302,8 +304,8 @@ form {}
 .wrapper .button .icon {
     display: inline-block;
     justify-content: center;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     text-align: center;
     border-radius: 70px;    
     line-height: 60px;
@@ -335,7 +337,7 @@ form {}
 
 .wrapper .button .icon i {
     font-size: 2px;
-    line-height: 60px;
+    line-height: 52px;
 
 }
 
@@ -363,7 +365,7 @@ form {}
 .wrapper .button span {
     font-size: 20px;
     font-weight: 500;
-    line-height: 60px;
+    line-height: 50px;
     margin-left: 5px;
 }
 
