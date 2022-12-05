@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Josh Pamara Rentals</title>
+  <title>G'Five Rentals</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="./test44.css">
+
 
   <style>
     * {
@@ -20,7 +20,19 @@
     }
 
     body {
-      background-color: rgb(197, 197, 197);
+      background-color: #ffd181;
+    }
+
+    .modal-backdrop {
+      opacity: 0.5 !important;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 209, 129, 1429' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-light .navbar-toggler {
+      box-shadow: none;
     }
 
     .btn {
@@ -44,10 +56,15 @@
       background: transparent;
     }
 
-    .statement {
+    .statement1 {
       color: white;
       font-size: 19px;
       text-align: center;
+    }
+    .statement2 {
+      color: black;
+      font-size: 19px;
+      text-align: center;      
     }
 
     .navbar-nav {
@@ -188,16 +205,15 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid bg-dark bg-opacity-25">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./images/G5-Logo-B-White-on-Black-Border-V1.png" alt="Logo" width="200" height="100"
+          <img src="./misc/G5-Logo-B-White-on-Black-Border-V1.png" alt="Logo" width="200" height="100"
             class="d-inline-block align-text-top">
         </a>
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -268,7 +284,7 @@
   <div class="container">
     <h1>CONTACT US</h1>
   </div>
-  <div class="statement">
+  <div class="statement1">
     <p>Please contact us via the following form. We will reply within 24 hrs.</p>
   </div>
   <div class="container">
@@ -291,7 +307,7 @@
       <div class="col-12">
         <button type="submit" class="btn btn-dark">Send</button>
       </div>
-      <div class="statement">
+      <div class="statement2">
         <p>or continue with</p>
         <div class="row soc-icon">
           <div class="col icon facebook">
@@ -314,9 +330,9 @@
       </div>
     </form>
   </div>
-  
-    <img class="contact" src="./images/contactus.jpg" alt="contactusimg">
-  
+
+  <img class="contact" src="./misc/contactus.jpg" alt="contactusimg">
+
 
 
 
