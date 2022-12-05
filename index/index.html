@@ -82,6 +82,394 @@
         background: #ffd181;
     }
 
+    /* 
+    ===================================================================
+
+    ===================================================================
+    */
+
+    
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    animation: zoom 3s linear infinite;
+    transition: 2s;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.3);
+    }
+
+    15% {
+        transform: scale(1);
+    }
+
+    85% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#slideimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    width: 85%;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.menu ul {
+    display: flex;
+    gap: 8px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    border: 1px solid #ffd181;
+    padding: 8px;
+    width: 100px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+}
+
+.content2 {
+    width: 95%;
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.content2 p {
+    line-height: 60px;
+    font-size: larger;
+    font-style: italic;
+    color: #ffd181;
+    font-weight: bold;
+}
+
+.content2 h1 {
+    font-size: 70px;
+    line-height: 100px;
+}
+
+.logo,
+.menu {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.logo {
+    color: #ff6d00;
+}
+
+.menu li:hover {
+    background-color: #ff6d00;
+}
+
+a:hover {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.btn-1:hover {
+    background-color: #ff6d00;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-2:hover {
+    background-color: #ff6d00;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span {
+    color: #ff6d00;
+}
+
+.slider2 {
+    height: 100vh;
+    width: 100%;
+}
+
+.rentnow {
+    line-height: 60px;
+}
+
+.rentnow button {
+    margin-left: 20px;
+    color: #fff;
+    padding: 0px;
+    border-radius: 20px;
+}
+
+.btn-1 {
+    background-color: #ff6d00;
+}
+
+.footer {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.8099614845938375) 0%,
+        rgba(221, 109, 0, 0.5634628851540616) 2%,
+        rgba(221, 109, 0, 0.8015581232492998) 100%
+    );
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    padding-left: 10px;
+    padding-bottom: 100px;
+    height: 500px;
+    margin-bottom: 0px;
+}
+
+.row {
+    width: auto;
+}
+
+button.btn {
+    background-color: #db7004;
+    border-color: #ffd181;
+    border-radius: 10px;
+    color: #fff;
+}
+
+button.btn:hover {
+    background-color: #ffd181;
+    color: black;
+    border-color: #ffffff;
+}
+
+.wrapper .button {
+    display: inline-flex;
+    text-decoration: none;
+    gap: 25px;
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        36deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 209, 129, 0.819765406162465) 58%
+    );
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+    background-color: #ffffff;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 70px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4400ff;
+    padding-right: 15px;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: rgb(64, 93, 230);
+    background: linear-gradient(
+        85deg,
+        rgba(64, 93, 230, 1) 0%,
+        rgba(131, 58, 180, 1) 20%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 90%,
+        rgba(255, 220, 128, 1) 100%
+    );
+    padding-right: 19.5px;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #1da1f2;
+    padding-right: 10px;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #fc0303;
+    padding-right: 10px;
+}
+
+.wrapper .button .icon i {
+    font-size: 2px;
+    line-height: 53px;
+    
+}
+
+.icon .fa.fa-facebook-f::before {
+    margin-left: 13px;
+}
+
+.icon .fa.fa-instagram::before {
+    padding-left: 8px;
+    
+}
+
+.icon .fa.fa-twitter::before {
+    padding-left: 8px;
+}
+
+.icon .fa.fa-youtube-play::before {
+    padding-left: 8px;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 5px;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+}
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+.footheader {
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(
+        to right top,
+        #cc7833,
+        #c27c2d,
+        #ca7a39,
+        #cf7a18,
+        #f59f3d
+    );
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content {
+        height: 30vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
+
 
 </style>
 </head>
@@ -288,7 +676,7 @@
                             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                                 <label for="newsletter1" class="visually-hidden">Email address</label>
                                 <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
-                                <button class="btn" href="#foorear" type="submit">
+                                <button class="btn" href="#foorear" type="reset" type="submit" id="footer">
                                     Subscribe
                                 </button>
 
@@ -310,7 +698,7 @@
                                             style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
                                     <span style="color: #1DA1F2">Twitter</span>
                                 </a>
-                                    <a class="button" href="# foorer"> <!-- /index/images/New folder/Pending/index.html --> 
+                                    <a class="button" href="# foorer"> <!-- /index/images/New folder/Pending/index.htmls --> 
                                     <div class="icon"><i class="fa fa-youtube-play"
                                             style=" font-size:34px;color:rgb(255, 255, 255)"></i></div>
                                     <span style="color: #fc0303">YouTube</span>
