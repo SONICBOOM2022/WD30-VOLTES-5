@@ -1,0 +1,114 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+.banner-hero {
+    position: relative;
+    min-height: 45vh;
+    width: 100%;
+    max-width: unset;
+    background: linear-gradient(0deg, rgb(0 0 0 / 30%), #ff6d00), url(./bannerbg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.banner-content-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.banner-hero h1 {
+    color: #ffD181;
+    font-size: 4em;
+    text-align: center;
+}
+.banner-hero:hover {
+    color: #ffD181;
+}
+.banner-hero h2 {
+    text-align: center;
+    color: #ffD181;
+    font-weight: 700;
+}
+.content-body-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    height: 200px;
+    
+}
+.btn {
+    background: rgb(227, 151, 93);
+    background: linear-gradient(180deg, rgba(255,109,0,1) 0%, rgba(255,109,0,1) 35%);
+    border: solid #ff6d00;
+    color: #ffD181;
+    
+}
+.card {
+    border: 2px solid #ff6d00;
+    transition: all ease .2s;
+}
+h2 {
+    
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.accordion-item1 {
+    background-image: url(./bannerbg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+a.btn.btn-primary {
+    display: grid;
+}
+a.btn.btn-primary {
+    transition: opacity .4s ease-in-out;
+    transition: color .3s ease-in-out;
+    transition: all ease .2s;
+}
+.card:hover {
+    transform: translateY(-15px)
+}
+.owl-carousel {
+    display: flex;
+    justify-content:space-between;
+}
+.accordion-item {
+    width: 1600px;
+    padding-top: 10px;
+    background: rgb(203,201,196);
+    background: radial-gradient(circle, rgba(203,201,196,0.7844887955182073) 14%, rgba(203,201,196,0.2102591036414566) 74%);
+    
+}
+body {
+    background: rgb(203,201,196);
+background: radial-gradient(circle, rgba(203,201,196,0.7844887955182073) 14%, rgba(203,201,196,0.2102591036414566) 74%);
+}
+.accordion-button
+{
+    background: rgb(203,201,196);
+}  
+.owl-wrapper {
+    padding: 40px;
+    display: flex;
+}
+.btn {
+    opacity: 0;
+}
+.card:hover .btn {
+    opacity: 1;
+
+}
+.card-body {
+    background: rgb(100,104,105);
+    background: linear-gradient(0deg, rgba(100,104,105,0.3895308123249299) 0%, rgba(245,199,95,0.47916666666666663) 100%);
+}
+.btn:hover {
+    border: 1px solid black;
+}
+
+
