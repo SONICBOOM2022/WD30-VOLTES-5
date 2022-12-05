@@ -208,8 +208,8 @@ button.btn:hover {
     display: inline-flex;
     text-decoration: none;
     gap: 25px;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     margin-top: 30px;
     float: left;
     margin: 0 5px;
@@ -234,8 +234,8 @@ button.btn:hover {
 .wrapper .button .icon {
     display: inline-block;
     justify-content: center;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     text-align: center;
     border-radius: 70px;
     line-height: 60px;
