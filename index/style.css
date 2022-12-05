@@ -256,14 +256,14 @@ span {
 }   
 
 
-.btn {
-    background-color: #dd6d00;
+button.btn {
+    background-color: #db7004;
     border-color: #ffd181;
     border-radius: 10px;
     color: #fff;
 }
 
-.btn:hover {
+button.btn:hover {
     background-color:#ffd181 ;
     color: black;
     border-color:#ffffff
