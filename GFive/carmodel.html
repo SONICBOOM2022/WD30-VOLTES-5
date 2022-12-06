@@ -12,8 +12,205 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 209, 129, 1429' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
 
-  <link rel="stylesheet" href="./carmodel.css">
+  .navbar-light .navbar-toggler {
+    box-shadow: none;
+  }
+
+  .btn {
+    background-color: #FF6d00;
+  }
+  .navbar-nav {
+    gap: 20px;
+  }
+
+  .nav-item .nav-link {
+    color: white;
+    font-size: 17px;
+  }
+
+  .nav-item a:hover {
+    background-color: #ff6d00;
+    border-radius: 5px;
+    transition: 0.0s;
+  }
+  button {
+    width: 140px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ffd181;
+    background: transparent;
+  }
+
+  .btn1 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .btn1:hover {
+    font-weight: normal;
+    background-color: #dd6d00;
+  }
+
+  .modal-body button {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #dd6d00;
+  }
+
+  .modal-body button:hover {
+    font-weight: normal;
+  }
+
+  .modal-body {
+    background: #ffd181;
+  }
+  .modal-body a {
+    color: black;
+}
+.modal-footer a {
+    color: whitesmoke;
+}
+.modal-header,
+.modal-footer {
+    background-color: rgb(153, 72, 72);
+    color: whitesmoke;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+.banner-hero {
+    position: relative;
+    min-height: 45vh;
+    width: 100%;
+    max-width: unset;
+    background: linear-gradient(0deg, rgb(0 0 0 / 30%), #ff6d00), url(./bannerbg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    z-index: -1;
+}
+.banner-content-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.banner-hero h1 {
+    color: #ffD181;
+    font-size: 4em;
+    text-align: center;
+}
+.banner-hero:hover {
+    color: #ffD181;
+}
+.banner-hero h2 {
+    text-align: center;
+    color: #ffD181;
+    font-weight: 700;
+}
+.content-body-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    height: 200px;
+    
+}
+.btn {
+    background: rgb(227, 151, 93);
+    background: linear-gradient(180deg, rgba(255,109,0,1) 0%, rgba(255,109,0,1) 35%);
+    border: solid #ff6d00;
+    color: #ffD181;
+    
+}
+.card {
+    border: 2px solid #ff6d00;
+    transition: all ease .2s;
+}
+h2 {
+    
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.accordion-item1 {
+    background-image: url(./bannerbg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+a.btn.btn-primary {
+    display: grid;
+}
+a.btn.btn-primary {
+    transition: opacity .4s ease-in-out;
+    transition: color .3s ease-in-out;
+    transition: all ease .2s;
+}
+.card:hover {
+    transform: translateY(-15px)
+}
+.owl-carousel {
+    display: flex;
+    justify-content:space-between;
+}
+.accordion-item {
+    width: 1600px;
+    padding-top: 10px;
+    background: rgb(203,201,196);
+    background: radial-gradient(circle, rgba(203,201,196,0.7844887955182073) 14%, rgba(203,201,196,0.2102591036414566) 74%);
+}
+body {
+    background: rgb(203,201,196);
+background: radial-gradient(circle, rgba(203,201,196,0.7844887955182073) 14%, rgba(203,201,196,0.2102591036414566) 74%);
+}
+.accordion-button
+{
+    background: rgb(203,201,196);
+}  
+.owl-wrapper {
+    padding: 40px;
+    display: flex;
+}
+.btn {
+    opacity: 0;
+}
+.card:hover .btn {
+    opacity: 1;
+
+}
+.card-body {
+    background: rgb(100,104,105);
+    background: linear-gradient(0deg, rgba(100,104,105,0.3895308123249299) 0%, rgba(245,199,95,0.47916666666666663) 100%);
+}
+.btn:hover {
+    border: 1px solid black;
+}
+.accordion-button {
+    border-radius: 5px;
+}
+.accordion-item {
+    border-radius: 5px;
+}
+
+
+</style>
 </head>
 
 <body>
@@ -21,7 +218,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./misc/G5-Logo-B-White-on-Black-Border-V1.png" alt="Logo" width="200" height="100"
+          <img src="./G5-Logo-B-White-on-Black-Border-V1.png" alt="Logo" width="200" height="100"
             class="d-inline-block align-text-top" href="#">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -31,11 +228,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="F:/usb/Kodego/coding/WD30-VOLTES-5/index/index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/carmodels/carmodel.html">Vehicles</a>
+                <a class="nav-link" aria-current="page" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/carmodel.html">Vehicles</a>
               </li>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/carmodels/carmodel.html" role="button" data-bs-toggle="dropdown" 
@@ -56,13 +253,13 @@
               </ul>
             </li>-->
             <li class="nav-item">
-              <a class="nav-link" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/termsandconditions/termsandconditions.html">Terms and Conditions</a>
+              <a class="nav-link" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/termsandconditions.html">Terms and Conditions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/underconstruction/underconstruction.html">About Us</a>
+              <a class="nav-link" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/underconstruction.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/contactus/contactus.html">Contact Us</a>
+              <a class="nav-link" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/contactus.html">Contact Us</a>
             </li>
           </ul>
           <form class="d-flex mx-auto">
@@ -80,7 +277,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <button type="button" class="btn btn-dark w-100">Sign in</button>
+                    <button type="button" class="btn1 btn-dark w-100">Sign in</button>
                     <h5><a href="#" class="text-decoration-none">Create a free account</a></h5>
                     <p>or continue with</p>
                     <h5><a href="#" class="text-decoration-none">List of favorites</a></h5>
@@ -136,7 +333,7 @@
             <div class="owl-carousel owl-theme">
                             <!--  -->
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/Kiasred.png" class="card-img-top" alt="...">
+                    <img src="./Kiasred.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">KIA SOLUTO 2022</h5>
                       <p class="card-text">
@@ -149,7 +346,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/KIAGOLDST4.jpg" class="card-img-top" alt="...">
+                    <img src="./KIAGOLDST4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title-K1">KIA STINGER 2022</h5>
                       <p class="card-text">
@@ -162,7 +359,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/KiawhiteX.jpg" class="card-img-top" alt="...">
+                    <img src="./KiawhiteX.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">KIA XCEED 2020</h5>
                       <p class="card-text">
@@ -175,7 +372,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/kiagreyrio.png" class="card-img-top" alt="...">
+                    <img src="./kiagreyrio.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">KIA RIO 2022</h5>
                       <p class="card-text">
@@ -188,7 +385,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/kiadarkcarnival.webp" class="card-img-top" alt="...">
+                    <img src="./kiadarkcarnival.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">CARNIVAL 2023</h5>
                       <p class="card-text">
@@ -201,7 +398,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/kiagreyS.png" class="card-img-top" alt="...">
+                    <img src="./kiagreyS.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">STONIC 2022</h5>
                       <p class="card-text">
@@ -214,7 +411,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/kiasportageblue.jpeg" class="card-img-top" alt="...">
+                    <img src="./kiasportageblue.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">SPORTAGE 2023</h5>
                       <p class="card-text">
@@ -227,7 +424,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/kiawhitesedona.webp" class="card-img-top" alt="...">
+                    <img src="./kiawhitesedona.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">SEDONA 2023</h5>
                       <p class="card-text">
@@ -252,7 +449,7 @@
           <div class="accordion-body">
             <div class="owl-carousel owl-theme">
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyotagrswhite.png" class="card-img-top" alt="...">
+                    <img src="./toyotagrswhite.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">VIOS GRS 2022</h5>
                       <p class="card-text">
@@ -265,7 +462,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/camrywhite.webp" class="card-img-top" alt="...">
+                    <img src="./camrywhite.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">CAMRY 2022</h5>
                       <p class="card-text">
@@ -278,7 +475,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyota-yaris-blue.png" class="card-img-top" alt="...">
+                    <img src="./toyota-yaris-blue.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">YARIS 2021</h5>
                       <p class="card-text">
@@ -291,7 +488,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyotawigoyellow.jpg" class="card-img-top" alt="...">
+                    <img src="./toyotawigoyellow.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">WIGO 2022</h5>
                       <p class="card-text">
@@ -304,7 +501,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyotafortunerblack.png" class="card-img-top" alt="...">
+                    <img src="./toyotafortunerblack.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">FORTUNER GRS 2022</h5>
                       <p class="card-text">
@@ -317,7 +514,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyota-veloz-white.webp" class="card-img-top" alt="...">
+                    <img src="./toyota-veloz-white.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">VELOZ 2022</h5>
                       <p class="card-text">
@@ -330,7 +527,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyota-avanza-black.jpeg" class="card-img-top" alt="...">
+                    <img src="./toyota-avanza-black.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">AVANZA 2O22</h5>
                       <p class="card-text">
@@ -343,7 +540,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyotainnovadviolet.webp" class="card-img-top" alt="...">
+                    <img src="./toyotainnovadviolet.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">INNOVA 2022</h5>
                       <p class="card-text">
@@ -355,7 +552,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyotahiacepanelwhite.jpeg" class="card-img-top" alt="...">
+                    <img src="./toyotahiacepanelwhite.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">LITE ACE 2022</h5>
                       <p class="card-text">
@@ -368,7 +565,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyotahiacegrey.jpeg" class="card-img-top" alt="...">
+                    <img src="./toyotahiacegrey.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">SUPER GRANDIA 2022</h5>
                       <p class="card-text">
@@ -381,7 +578,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyotahiluxblue.jpg" class="card-img-top" alt="...">
+                    <img src="./toyotahiluxblue.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">HILUX 2022</h5>
                       <p class="card-text">
@@ -394,7 +591,7 @@
                     </div>
                   </div></div>
                 <div class="item" ><div class="card" style="width: 18rem;">
-                    <img src="./misc/toyotahiluxgrsgrey.jpg" class="card-img-top" alt="...">
+                    <img src="./toyotahiluxgrsgrey.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">HILUX GRS 2022</h5>
                       <p class="card-text">
@@ -419,7 +616,7 @@
                 
 
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/hondacivicryellow.jpg" class="card-img-top" alt="...">
+                    <img src="./hondacivicryellow.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">CIVIC TYPE R 2023</h5>
                       <p class="card-text">
@@ -432,7 +629,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/hondaaccorddgreen.png" class="card-img-top" alt="...">
+                    <img src="./hondaaccorddgreen.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">ACCORD HYBRID 2023</h5>
                       <p class="card-text">
@@ -445,7 +642,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/hondacitygrey.webp" class="card-img-top" alt="...">
+                    <img src="./hondacitygrey.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">CITY RS 2023</h5>
                       <p class="card-text">
@@ -458,7 +655,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/Honda-civic hatchback-red.png" class="card-img-top" alt="...">
+                    <img src="./Honda-civic hatchback-red.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">CIVIC HATCHBACK 2023</h5>
                       <p class="card-text">
@@ -471,7 +668,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/hondabrvbrown.jpg" class="card-img-top" alt="...">
+                    <img src="./hondabrvbrown.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">BR-V 2023</h5>
                       <p class="card-text">
@@ -484,7 +681,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/hondahrvgreen.webp" class="card-img-top" alt="...">
+                    <img src="./hondahrvgreen.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">HR-V 2023</h5>
                       <p class="card-text">
@@ -497,7 +694,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/honda-crv-grey.jpg" class="card-img-top" alt="...">
+                    <img src="./honda-crv-grey.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">CR-V 2023</h5>
                       <p class="card-text">
@@ -510,7 +707,7 @@
                     </div>
                   </div></div>
                 <div class="item"><div class="card" style="width: 18rem;">
-                    <img src="./misc/hondacrvhybridred2.png" class="card-img-top" alt="...">
+                    <img src="./hondacrvhybridred2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">CR-V HYBRID 2022</h5>
                       <p class="card-text">
