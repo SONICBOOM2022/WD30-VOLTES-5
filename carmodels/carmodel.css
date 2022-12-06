@@ -64,6 +64,17 @@
   .modal-body {
     background: #ffd181;
   }
+  .modal-body a {
+    color: black;
+}
+.modal-footer a {
+    color: whitesmoke;
+}
+.modal-header,
+.modal-footer {
+    background-color: rgb(153, 72, 72);
+    color: whitesmoke;
+}
 .navigation {
     display: flex;
     justify-content: center;
@@ -77,6 +88,7 @@
     background-position: center;
     background-size: cover;
     display: flex;
+    z-index: -1;
 }
 .banner-content-cont {
     display: flex;
