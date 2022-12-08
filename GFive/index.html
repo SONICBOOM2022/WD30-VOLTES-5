@@ -27,7 +27,7 @@
             opacity: 0.5 !important;
         }
         .navbar-toggler-icon {
-            /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 209, 129, 1429' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
+           
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 209, 129, 1429' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
         .navbar-light .navbar-toggler {
@@ -332,6 +332,70 @@
         }
         .icon .fa.fa-youtube-play::before {
             padding-left: 8px;
+        }
+        .wrapper .button {
+            display: inline-flex;
+            text-decoration: none;
+            gap: 25px;
+            height: 50px;
+            width: 50px;
+            margin-top: 30px;
+            float: left;
+            margin: 0 5px;
+            overflow: hidden;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(36deg,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(255, 209, 129, 0.819765406162465) 58%);
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+        }
+        .wrapper .button:hover {
+            width: 200px;
+            background-color: #ffffff;
+        }
+        .wrapper .button .icon {
+            display: inline-block;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            border-radius: 70px;
+            line-height: 60px;
+            transition: all 0.3s ease-out;
+        }
+        .wrapper .button:nth-child(1):hover .icon {
+            background: #4400ff;
+            padding-right: 15px;
+        }
+
+        .wrapper .button:nth-child(2):hover .icon {
+            background: rgb(64, 93, 230);
+            background: linear-gradient(85deg,
+                    rgba(64, 93, 230, 1) 0%,
+                    rgba(131, 58, 180, 1) 20%,
+                    rgba(253, 29, 29, 1) 50%,
+                    rgba(252, 176, 69, 1) 90%,
+                    rgba(255, 220, 128, 1) 100%);
+            padding-right: 19.5px;
+        }
+
+        .wrapper .button:nth-child(3):hover .icon {
+            background: #1da1f2;
+            padding-right: 10px;
+        }
+
+        .wrapper .button:nth-child(4):hover .icon {
+            background: #fc0303;
+            padding-right: 10px;
+        }
+
+        .wrapper .button .icon i {
+            font-size: 2px;
+            line-height: 53px;
+
         }
         .wrapper .button span {
             font-size: 20px;
