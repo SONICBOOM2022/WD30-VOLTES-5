@@ -89,16 +89,22 @@
         .modal-body {
             background: #ffd181;
         }
-        .modal-body a {
+        .modal-body a,
+        .modal-footer a {
             color: black;
         }
-        .modal-footer a {
-            color: whitesmoke;
+
+
+        .modal-header {
+            background: rgb(255, 209, 129);
+            background: linear-gradient(0deg, rgba(255, 209, 129, 1) 8%, rgba(255, 109, 0, 1) 69%);
+
         }
-        .modal-header,
+
         .modal-footer {
-            background-color: rgb(153, 72, 72);
-            color: whitesmoke;
+            background: rgb(255, 209, 129);
+            background: linear-gradient(180deg, rgba(255, 209, 129, 1) 8%, rgba(255, 109, 0, 1) 69%);
+
         }
         .banner {
             width: 100%;
@@ -223,75 +229,98 @@
             width: auto;
         }
         button.btn {
-            background-color: #db7004;
-            border-color: #ffd181;
+            background-color: #FF6d00;
+            border-color: #343a40;
             border-radius: 10px;
             color: #fff;
         }
         button.btn:hover {
-            background-color: #ffd181;
-            color: black;
-            border-color: #ffffff;
+            background-color: #343a40;
+            color: white;
+            border-color: #343a40;
         }
-        .wrapper .button {
-            display: inline-flex;
-            text-decoration: none;
-            gap: 25px;
-            height: 50px;
-            width: 50px;
-            margin-top: 30px;
-            float: left;
-            margin: 0 5px;
-            overflow: hidden;
-            background: rgb(255, 255, 255);
-            background: linear-gradient(36deg,
-                    rgba(255, 255, 255, 1) 0%,
-                    rgba(255, 209, 129, 0.819765406162465) 58%);
-            border-radius: 50px;
-            cursor: pointer;
-            box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease-out;
-        }
-        .wrapper .button:hover {
-            width: 200px;
-            background-color: #ffffff;
-        }
-        .wrapper .button .icon {
-            display: inline-block;
-            justify-content: center;
-            height: 50px;
-            width: 50px;
+        .modal .icon {
+            padding: 12px;
+            font-size: 30px;
+            width: 30px;
             text-align: center;
-            border-radius: 70px;
-            line-height: 60px;
-            transition: all 0.3s ease-out;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 20px;
+
+
         }
-        .wrapper .button:nth-child(1):hover .icon {
-            background: #4400ff;
-            padding-right: 15px;
+
+        .modal .icon .bi-facebook {
+            color: #385999;
+            background: #ffd181;
         }
-        .wrapper .button:nth-child(2):hover .icon {
-            background: rgb(64, 93, 230);
-            background: linear-gradient(85deg,
-                    rgba(64, 93, 230, 1) 0%,
-                    rgba(131, 58, 180, 1) 20%,
-                    rgba(253, 29, 29, 1) 50%,
-                    rgba(252, 176, 69, 1) 90%,
-                    rgba(255, 220, 128, 1) 100%);
-            padding-right: 19.5px;
+
+        .modal .icon .bi-instagram {
+            color: #e1306c;
+            background: #ffd181;
         }
-        .wrapper .button:nth-child(3):hover .icon {
-            background: #1da1f2;
-            padding-right: 10px;
+
+        .modal .icon .bi-twitter {
+            color: #46C1F6;
+            background: #ffd181;
         }
-        .wrapper .button:nth-child(4):hover .icon {
-            background: #fc0303;
-            padding-right: 10px;
+
+        .modal .icon .bi-google {
+            color: #4885ed;
+            background: #ffd181;
         }
-        .wrapper .button .icon i {
-            font-size: 2px;
-            line-height: 53px;
+
+        .modal .icon .tooltip {
+            position: absolute;
+            top: 0px;
+            background: white;
+            color: white;
+            font-size: 20px;
+            padding: 10px 18px;
+            border-radius: 25px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.1s;
+           
         }
+
+        .modal .icon:hover .tooltip {
+            top: 370px;
+            opacity: 1;
+            pointer-events: auto;
+
+        }
+        .facebook:hover span,
+        .facebook:hover .tooltip,
+        .facebook:hover .tooltip:before {
+            background: #385999;
+            left: 16%;
+        }
+
+        .instagram:hover span,
+        .instagram:hover .tooltip,
+        .instagram:hover .tooltip:before {
+            background: #e1306c;
+            left: 30%;
+        }
+
+        .twitter:hover span,
+        .twitter:hover .tooltip,
+        .twitter:hover .tooltip:before {
+            background: #46C1F6;
+            left: 47%;
+        }
+
+        .google:hover span,
+        .google:hover .tooltip,
+        .google:hover .tooltip:before {
+            background: #4885ed;
+            left: 60%;
+
+        }
+        
         .icon .fa.fa-facebook-f::before {
             margin-left: 13px;
         }
@@ -419,25 +448,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" aria-current="page"
                                         href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/carmodel.html">Vehicles</a>
-                                </li>
-                                <!-- <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/carmodels/carmodel.html" role="button" data-bs-toggle="dropdown" 
-                            aria-expanded="false">
-                            Vehicles
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/carmodels/carmodel.html">Hatchback</a></li>
-                            <li><a class="dropdown-item" href="#">Sedan</a></li>
-                            <li><a class="dropdown-item" href="#">SUV</a></li>
-                            <li><a class="dropdown-item" href="#">Van</a></li>
-                            <li><a class="dropdown-item" href="#">Pick-up</a></li>
-                            <li><a class="dropdown-item" href="#">Motorcycle</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Kariton</a></li>
-                          </ul>
-                        </li>-->
+                                </li>                                
                         <li class="nav-item">
                           <a class="nav-link" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/termsandconditions.html">Terms and Conditions</a>
                         </li>
@@ -453,30 +464,73 @@
                           data-bs-target="#exampleModal">
                           Login
                         </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                          aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Members can access discounts,
-                                  points and special features.</h1>
-                                <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                
-                                <a type="button" class="btn btn-dark w-100 my-1" href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/login.html" role="button">Sign in</a>
-                                <h5><a href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/signup/signup.html" class="text-decoration-none">Create a free account</a></h5>
-                                <p>or continue with</p>
-                                <h5><a href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/underconstruction.html" class="text-decoration-none">List of favorites</a></h5>
-                                <h5><a href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/underconstruction.html" class="text-decoration-none">Loyalty programs</a></h5>
-                                
-                              </div>
-                              <div class="modal-footer">
-                                <h5><a href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/underconstruction.html" class="text-decoration-none justify-left">Feedback</a></h5>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Members can access
+                                                    discounts,
+                                                    points and special features.</h1>
+                                                <button type="button" class="btn-close btn-light"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body px-5">
+                                                <form>
+                                                    <div class="mb-3 w-100">
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="Email">
+                                                    </div>
+                                                    <div class="mb-3 w-100">
+                                                        <input type="password" class="form-control my-3"
+                                                            id="exampleInputPassword1" placeholder="Password">
+                                                    </div>
+                                                    <div class="mb-3 form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck1">Keep me
+                                                            signed in</label>
+                                                    </div>
+                                                    <p class="w-100">Selecting this checkbox will keep you signed into
+                                                        your account on this device until
+                                                        you
+                                                        sign out. Do not select this on shared devices.</p>
+                                                    <button type="submit" class="btn btn-dark w-75 mx-5">Sign
+                                                        in</button>
+                                                    <div class="col-9 mx-auto">
+                                                        <p class="text-center"><a href="#"
+                                                                class="text-decoration-none">Forgot password?</a></p>
+                                                    </div>
+                                                    <p>Don't have an account? <a href="#"
+                                                            class="text-decoration-none">Create one.</a></p>
+                                                    <p>or continue with</p>
+                                                    <div class="row mx-5">
+                                                        <div class="icon facebook col-1">
+                                                            <div class="tooltip">Facebook</div>
+                                                            <span><i class="bi bi-facebook"></i></span>
+                                                        </div>
+                                                        <div class="icon instagram col-2">
+                                                            <div class="tooltip">Instagram</div>
+                                                            <span><i class="bi bi-instagram"></i></span>
+                                                        </div>
+                                                        <div class="icon twitter col-3">
+                                                            <div class="tooltip">Twitter</div>
+                                                            <span><i class="bi bi-twitter"></i></span>
+                                                        </div>
+                                                        <div class="icon google col-4">
+                                                            <div class="tooltip">Google</div>
+                                                            <span><i class="bi bi-google"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <h5><a href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/underconstruction.html"
+                                                        class="text-decoration-none justify-left">Feedback</a></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                     </div>
                 </nav>
             </div>
