@@ -27,7 +27,9 @@
   .nav-item .nav-link {
     color: white;
     font-size: 17px;
+    width: 10px;
   }
+  
 
   .nav-item a:hover {
     background-color: #ff6d00;

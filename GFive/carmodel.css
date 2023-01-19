@@ -84,7 +84,7 @@
     min-height: 45vh;
     width: 100%;
     max-width: unset;
-    background: linear-gradient(0deg, rgb(0 0 0 / 30%), #ff6d00), url(./misc/bannerbg.jpg);
+    background: linear-gradient(0deg, rgb(0 0 0 / 30%), #ff6d00), url(./bannerbg.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
