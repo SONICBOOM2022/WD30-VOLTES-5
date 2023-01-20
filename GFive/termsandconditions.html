@@ -21,34 +21,14 @@
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .modal-backdrop {
-            opacity: 0.5 !important;
-        }
-
         body {
             background-color: rgba(221, 109, 0, 0.5634628851540616);
         }
 
-        .btn {
-            background-color: #FF6d00;
-        }
 
-        #header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;            
-            z-index: 100000;
-        }
-        #header.sticky {
-            
-            background: black;
-        }
-        
-
+        /* NAVBAR START */
         .navbar-nav {
             gap: 20px;
-
         }
 
         .nav-item .nav-link {
@@ -57,19 +37,9 @@
         }
 
         .nav-item a:hover {
-            background: rgb(255, 209, 129);
-            background: linear-gradient(162deg, rgba(255, 209, 129, 1) 0%, rgba(255, 255, 255, 0.8981967787114846) 0%, rgba(255, 173, 0, 0.819765406162465) 52%, rgba(255, 255, 255, 0.7133228291316527) 100%, rgba(255, 209, 129, 1) 100%);
+            background-color: #ff6d00;
             border-radius: 5px;
             transition: 0.0s;
-            color: #000000;
-        }
-
-        .dropdown-menu {
-            background-color: white;
-        }
-
-        .dropdown-menu a:hover {
-            background-color: #ffd181;
         }
 
         .navbar-toggler-icon {
@@ -80,6 +50,10 @@
             box-shadow: none;
         }
 
+        .navbar-toggler {
+            border-color: transparent;
+        }
+
         button {
             width: 140px;
             padding: 10px;
@@ -88,6 +62,10 @@
             border-radius: 10px;
             border: 1px solid #ffd181;
             background: transparent;
+        }
+
+        .btn {
+            background-color: #FF6d00;
         }
 
         .btn1 {
@@ -101,6 +79,25 @@
             background-color: #dd6d00;
         }
 
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100000;
+        }
+
+        #header.sticky {
+            background: black;
+        }
+
+        /* NAVBAR END */
+
+
+        /* MODAL START */
+        .modal-backdrop {
+            opacity: 0.5 !important;
+        }
         .modal-body button {
             color: white;
             font-weight: bold;
@@ -108,35 +105,21 @@
             background-color: #dd6d00;
             border-color: black;
         }
-
         .modal-body button:hover {
             font-weight: normal;
             border-color: gray;
             background-color: rgb(70, 70, 70);
         }
-
-        .modal-body {
-            background: #ffd181;
-        }
-
+        .modal-header h1,
         .modal-body a,
         .modal-footer a {
             color: black;
         }
-
-
-        .modal-header {
-            background: rgb(255, 209, 129);
-            background: #ffd181;
-
-        }
-
+        .modal-header,
+        .modal-body,
         .modal-footer {
-            background: rgb(255, 209, 129);
             background: #ffd181;
-
         }
-
         .modal .icon {
             padding: 12px;
             font-size: 30px;
@@ -145,30 +128,23 @@
             text-decoration: none;
             display: inline-block;
             margin: 5px 20px;
-
-
         }
-
         .modal .icon .bi-facebook {
             color: #385999;
             background: #ffd181;
         }
-
         .modal .icon .bi-instagram {
             color: #e1306c;
             background: #ffd181;
         }
-
         .modal .icon .bi-twitter {
             color: #46C1F6;
             background: #ffd181;
         }
-
         .modal .icon .bi-google {
             color: #4885ed;
             background: #ffd181;
         }
-
         .modal .icon .tooltip {
             position: absolute;
             top: 0px;
@@ -181,14 +157,28 @@
             opacity: 0;
             pointer-events: none;
             transition: all 0.1s;
-
         }
-
         .modal .icon:hover .tooltip {
             top: 370px;
             opacity: 1;
             pointer-events: auto;
+        }
+        /* MODAL END */
 
+
+        /* BODY START */
+        .container {
+            width: 100%;
+            /* padding: 0rem 1rem 0rem 1rem; */
+            padding: 0px 1px 0px 1px;
+        }
+
+        .article {
+            display: inline-block;
+            max-width: 85rem;
+            margin-top: 5%;
+            background: whitesmoke;
+            padding: 3%;
         }
 
         .terms {
@@ -197,16 +187,8 @@
             left: 0;
             z-index: -1;
             width: 100%;
-            min-width: 50rem;
+            min-width: 20rem;
             height: 120vh;
-        }
-
-        .article {
-            display: inline-block;
-            margin: 0 5% 0 5%;
-            margin-top: 5%;
-            background: whitesmoke;
-            padding: 3%;
         }
 
         h6 {
@@ -219,13 +201,16 @@
         }
 
         .header h1 {
-            font-size: 70px;
+            font-size: clamp(1rem, 1rem + 10vw, 4.375rem);
             color: white;
             font-weight: 600;
             width: 100%;
             margin-top: 170px;
         }
 
+        /* BODY END */
+
+        /* FOOTER START */
         .footer {
             position: relative;
             display: block;
@@ -274,7 +259,6 @@
         .google:hover .tooltip:before {
             background: #4885ed;
             left: 60%;
-
         }
 
         .icon .fa.fa-facebook-f::before {
@@ -358,7 +342,6 @@
         .wrapper .button .icon i {
             font-size: 2px;
             line-height: 53px;
-
         }
 
         .wrapper .button span {
@@ -368,10 +351,8 @@
             margin-left: 5px;
         }
 
-        .container {
-            margin: auto;
-            width: 100%;
-        }
+        /* FOOTER END */
+
 
         @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
@@ -385,6 +366,12 @@
                     #cf7a18,
                     #f59f3d);
             color: white;
+        }
+
+        @media only screen and (max-width: 991px) {
+            #header {
+                background: black;
+            }
         }
     </style>
 </head>
@@ -410,24 +397,6 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="carmodel.html">Vehicles</a>
                         </li>
-                        <!-- <li class="nav-item dropdown"> 
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Vehicles
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Hatchback </a></li>
-                                <li><a class="dropdown-item" href="#">Sedan</a></li>
-                                <li><a class="dropdown-item" href="#">SUV</a></li>
-                                <li><a class="dropdown-item" href="#">Van</a></li>
-                                <li><a class="dropdown-item" href="#">Pick-up</a></li>
-                                <li><a class="dropdown-item" href="#">Motorcycle</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Kariton</a></li>
-                            </ul>
-                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link">Terms and Conditions</a>
                         </li>
@@ -708,11 +677,11 @@
                 <p>(1) An additional Payment of Php100.00/day on top of the rental fee will limit the participation fee
                     of
                     the
-                    Renter, only in case of damage to JPR car, to Php10,000.00; and</p>
+                    Renter, only in case of damage to GFR car, to Php10,000.00; and</p>
                 <p>(2) An additional payment of Php150.00/day on top of the rental fee will relieve the renter from
                     payment
                     of
-                    any participation fees onlyin case of damage to JPR car as this will be considered as full coverage.
+                    any participation fees onlyin case of damage to GFR car as this will be considered as full coverage.
                     This
                     limitation on payment and participation fees apply only to damages caused to the Rental Vehicle and
                     does
@@ -735,7 +704,7 @@
                     replacements
                     and
                     other charges.</p>
-                <p>7. Responsibilities of the Renter. Every 5,000km renter shall bring the Rental Vehicle to the JPR
+                <p>7. Responsibilities of the Renter. Every 5,000km renter shall bring the Rental Vehicle to the GFR
                     Corporation
                     garage for proper maintenance and check up. Failure to do so, damage as a result shall be charge to
                     the
@@ -825,19 +794,19 @@
                 <p>12. Repairs, Maintenance and Rescue. The rented vehicle should have all service and repair work
                     performed
                     at
-                    JPR Corporation or Owner’s car shop only.</p>
-                <p>In cases of any accidents or breakdowns, JPR Corporation provides road side assistance and emergency
+                    GFR Corporation or Owner’s car shop only.</p>
+                <p>In cases of any accidents or breakdowns, GFR Corporation provides road side assistance and emergency
                     rescues.
                     However, Metro Manila rescues will be given 24 hours maximum to resolve. Outside of Metro Manila
                     will
-                    require the company at the most of 48 hours to resolve. In severe cases, JPR Corporation will decide
+                    require the company at the most of 48 hours to resolve. In severe cases, GFR Corporation will decide
                     to
                     provide a replacement car to the client.</p>
-                <p>The JPR Corporation reserves the rights to approve of any purchases for any car parts needs of the
+                <p>The GFR Corporation reserves the rights to approve of any purchases for any car parts needs of the
                     client
                     which will be vital for the repair of the unit. Once approved by the management, any official
                     receipts
-                    should be under the name Josh Pamara Rentals (J.P.R.) Corporation and will be up for reimbursement.
+                    should be under the name G'Five Rentals (G.F.R.) Corporation and will be up for reimbursement.
                 </p>
                 <p>13. Entire Agreement. This Car Rental Agreement constitutes the entire agreement between the Parties
                     with
@@ -862,23 +831,23 @@
                 <p>• Payment may be refunded upon presentation of the original validated bank deposit or official
                     receipt
                     and a
-                    valid ID. This policy must be strictly followed and can only be done at JPR office only. We will not
+                    valid ID. This policy must be strictly followed and can only be done at GFR office only. We will not
                     deposit
                     refunds.</p>
                 <p>Payments:</p>
                 <p>Paypal</p>
-                <p>Paypal Account Name: J.P.R. (Josh Pamara Rentals Corp)</p>
-                <p>PaypalEmail: joshpamara@joshpamararentals.com</p>
-                <p>Link: https://www.paypal.me/joshpamararentals</p>
+                <p>Paypal Account Name: G.F.R. (G'Five Rentals Corp)</p>
+                <p>PaypalEmail: gfive@gfiverentals.com</p>
+                <p>Link: https://www.paypal.me/gfiverentals</p>
                 <p>*For Credit/Debit Card Payment please click on the link <a href="https://www.paypal.com/ph/home"
-                        class="text-decoration-none">JPR Paypal</a>
+                        class="text-decoration-none">GFR Paypal</a>
                 </p>
                 <p>Pay Pal Payment and credit card – we will apply 5% service charge.</p>
                 <p>Bank Transfer</p>
                 <p>*Bank: BDO</p>
                 <p>• Deposit payment at Banco de Oro, Savings
                 <ul>
-                    <li>Account Name: Josh Pamara Rentals (J.P.R.) Corporation</li>
+                    <li>Account Name: G'Five Rentals (G.F.R.) Corporation</li>
                     <li>Account Number: 001434456564</li>
                 </ul>
                 </p>
@@ -993,22 +962,11 @@
 
 
     </div>
-    </script>
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
-    <!-- <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>-->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script>
         AOS.init();
     </script>
