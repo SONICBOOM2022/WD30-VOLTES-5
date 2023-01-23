@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G'Five Rentals</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="./images/New folder/Pending/index.html"> -->
     <!-- <link rel="stylesheet" href="./images/New folder/Pending/indexVIP .html"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
@@ -36,24 +37,39 @@
         .navbar-light .navbar-toggler {
             box-shadow: none;
         }
-
+        
+        
         .navbar-nav {
-            gap: 20px;
+            gap: 50px;
         }
 
         .nav-item .nav-link {
             color: white;
-            font-size: 17px;
+            font-size: 18px;
+            font-weight: normal;
+                
         }
 
+        il.navbarMenu {
+            width: 800px;
+            margin-left: 0px;
+        }
 
+        .navbarMenu {
+            gap: 25px;
+            list-style-type: none;
+            display: flex;;
+            
+        }
+        
+             
 
         .nav-item a:hover {
             background: rgb(255, 209, 129);
-            background: linear-gradient(162deg, rgba(255, 209, 129, 1) 0%, rgba(255, 255, 255, 0.8981967787114846) 0%, rgba(255, 173, 0, 0.819765406162465) 52%, rgba(255, 255, 255, 0.7133228291316527) 100%, rgba(255, 209, 129, 1) 100%);
+            background: #ff6d00;
             border-radius: 5px;
             transition: 0.0s;
-            color: #000000;
+            color: #fffefe;
         }
 
         .dropdown-menu {
@@ -80,12 +96,12 @@
 
         .btn1 {
             color: white;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 20px;
         }
 
         .btn1:hover {
-            font-weight: normal;
+            font-weight: bold;
             background-color: #dd6d00;
         }
 
@@ -219,14 +235,17 @@
         }
 
         .rentnow {
-            line-height: 60px;
+            line-height: 53px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #ff6d00;
         }
 
         .rentnow button {
             margin-left: 20px;
             color: #fff;
             padding: 0px;
-            border-radius: 20px;
+            border-radius: 12px;
         }
 
         .btn-1 {
@@ -242,10 +261,7 @@
             background-repeat: no-repeat;
             bottom: 0;
             background: rgb(255, 255, 255);
-            background: linear-gradient(0deg,
-                    rgba(255, 255, 255, 0.8099614845938375) 0%,
-                    rgba(221, 109, 0, 0.5634628851540616) 2%,
-                    rgba(221, 109, 0, 0.8015581232492998) 100%);
+            background: #ff6d00;
             color: #f1f1f1;
             width: 100%;
             padding: 20px;
@@ -266,15 +282,16 @@
 
         button.btn {
             background-color: #FF6d00;
-            border-color: #343a40;
+            border-color: #ffd181;
             border-radius: 10px;
-            color: #fff;
+            color: rgb(255, 255, 255);
         }
 
         button.btn:hover {
-            background-color: #343a40;
-            color: white;
-            border-color: #343a40;
+            background-color: #FF6d00;
+            color: #ffffff;
+            border-color: #ffd181;
+            font-weight: bold;
         }
 
         .modal .icon {
@@ -375,6 +392,9 @@
         .icon .fa.fa-youtube-play::before {
             padding-left: 8px;
         }
+        .icon .fa.fa-google::before {
+            padding-left: 8px;
+        }
 
         .wrapper .button {
             display: inline-flex;
@@ -438,6 +458,16 @@
             padding-right: 10px;
         }
 
+        .wrapper .button:nth-child(5):hover .icon {
+            background: rgb(64, 93, 230);
+            background: linear-gradient(85deg,
+                    
+                    rgb(35, 189, 14) 15%,
+                    rgb(29, 70, 253) 50%,
+                    rgb(226, 41, 17) 70%,
+                    rgb(255, 251, 0) 100%);
+            padding-right: 19.5px;
+        }
         .wrapper .button .icon i {
             font-size: 2px;
             line-height: 53px;
@@ -477,14 +507,7 @@
             text-align: center;
         }
 
-        .waves {
-            position: relative;
-            width: 100%;
-            height: 15vh;
-            margin-bottom: -7px;
-            min-height: 100px;
-            max-height: 150px;
-        }
+       
 
         .content {
             position: relative;
@@ -493,54 +516,7 @@
             background-color: white;
         }
 
-        .parallax>use {
-            animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-        }
-
-        .parallax>use:nth-child(1) {
-            animation-delay: -2s;
-            animation-duration: 7s;
-        }
-
-        .parallax>use:nth-child(2) {
-            animation-delay: -3s;
-            animation-duration: 10s;
-        }
-
-        .parallax>use:nth-child(3) {
-            animation-delay: -4s;
-            animation-duration: 13s;
-        }
-
-        .parallax>use:nth-child(4) {
-            animation-delay: -5s;
-            animation-duration: 20s;
-        }
-
-        @keyframes move-forever {
-            0% {
-                transform: translate3d(-90px, 0, 0);
-            }
-
-            100% {
-                transform: translate3d(85px, 0, 0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .waves {
-                height: 40px;
-                min-height: 40px;
-            }
-
-            .content {
-                height: 30vh;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-        }
+       
     </style>
 
 </head>
@@ -548,45 +524,52 @@
 <body onload="slider()">
     <div class="banner">
         <div class="slider">
-            <img src="./index/images/10.jpg" alt="" id="slideimg" />
+            <img src="./10.jpg" alt="" id="slideimg" />
         </div>
         <div class="overlay">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <img src="./G5-Logo-B-White-on-Black-Border-V1.png" alt="Logo" width="200" height="100"
-                                class="d-inline-block align-text-top">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            <div class="container-fluid" style="width: 100%; margin-left: 0px;">
+                <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%;">
+                    <a class="navbar-brand">
+                        <img src="./G5-Logo-B-White-on-Black-Border-V1.png" alt="Logo" width="180" style="padding-left:20px;" height="100"
+                            class="d-inline-block align-text-top">
+                    </a>
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" style="width: 62px;" aria-current="page" href="#">Home</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 693px;">
+                            <ul class="navbarMenu" style="width: 693px; margin-left: 0px; padding-left: 0px;">
+                                <li class="nav-item" style="width: 77px;" >
+                                    <a class="nav-link" style="width: 75px; padding-left: 5px; font-size: 21px;" aria-current="page" href="#">
+                                        <r>H</r><r style="margin-left:2px;">o</r><r style="margin-left:2.5px;">m</r> <r style="margin-left:-3.5px;">e</r>                                    
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" style="width: 77px;" aria-current="page"
-                                        href="carmodel.html">Vehicles</a>
+                                    <a class="nav-link" style="width: 92px; padding-left: 4px; font-size: 21px;" aria-current="page"
+                                        href="carmodel.html" >
+                                        <r>V</r> <r style="margin-left: -5px;">e</r> <r style="margin-left: -4px;">h</r><r style="margin-left: 1px;">i</r><r style="margin-left: 1px;">c</r><r style="margin-left: 1px;">l</r><r style="margin-left: 1px;">e</r><r style="margin-left: 1px;">s</r> 
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" style="width: 180px;" href="termsandconditions.html">Terms and
-                                        Conditions</a>
+                                    <a class="nav-link" style="width: 250px; padding-left: 5px; font-size: 21px;" href="termsandconditions.html">
+                                        <r>T</r><r style="margin-left: 1px;">e</r><r style="margin-left: 1.5px;">r</r><r style="margin-left: 2.5px;">m</r><r style="margin-left: 2px;">s</r><r style="margin-left: 10px;">a</r><r style="margin-left: 2px;">n</r><r style="margin-left: 2px;">d</r><r style="margin-left: 10px;">C</r><r style="margin-left: 2px;">o</r><r style="margin-left: 2px;">n</r><r style="margin-left: 2px;">d</r><r style="margin-left: 2px;">i</r><r style="margin-left: 2px;">t</r><r style="margin-left: 2px;">i</r><r style="margin-left: 2px;">o</r><r style="margin-left: 2px;">n</r><r style="margin-left: 2px;">s</r>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" style="width: 90px;" href="underconstruction.html">About Us</a>
+                                    <a class="nav-link" style="width: 110px; padding-left: 5px; font-size: 21px;" href="underconstruction.html">
+                                        <r>A</r><r style="margin-left: 2px;">b</r><r style="margin-left: 2px;">o</r><r style="margin-left: 2px;">u</r><r style="margin-left: 2px;">t</r><r style="margin-left: 8px;">U</r><r style="margin-left: 2px;">s</r>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" style="width: 100px;" href="contactus.html">Contact Us</a>
+                                    <a class="nav-link" style="width: 145px; padding-left: 5px; font-size: 21px;" href="contactus.html">
+                                        <r>C</r><r style="margin-left: 3px;">o</r><r style="margin-left: 3px;">n</r><r style="margin-left: 3px;">t</r><r style="margin-left: 3px;">a</r><r style="margin-left: 3px;">c</r><r style="margin-left: 3px;">t</r><r style="margin-left: 10px;">U</r><r style="margin-left: 3px; margin-right: 0px;">s</r>
+                                    </a>
                                 </li>
                             </ul>
-                            <form class="d-flex mx-auto">
-                                <button type="button" class="btn1 btn-outline-warning btn-lg" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Login
+                            <form class="d-flex" style="margin-left:550px; margin-right: 0px;">
+                                <button type="button" class="btn1 " style="width: 200px;">
+                                    <r>L</r> <r>o</r>  <r>g</r> <r>i</r> <r>n</button>r>
                                 </button>
                                 <div class="modal fade" id="exampleModal" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -647,16 +630,16 @@
                                                             <span><i class="bi bi-google"></i></span>
                                                         </div>
                                                     </div>
-                                                </form>
-                                            </div>
+                            </form>
+                                        <div>
                                             <div class="modal-footer">
                                                 <h5><a href="underconstruction.html"
                                                         class="text-decoration-none justify-left">Feedback</a></h5>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                        </div>
+                                 
+                                
+                    </div>
                 </nav>
             </div>
 
@@ -668,11 +651,11 @@
                     <p>Drive your dream car with affordable rates!</p>
 
                     <div class="rentnow">
-                        <button type="button" class="btn-1" href="signup.html">
-                            RENT NOW
+                        <button type="button" class="btn-1" href="signup.html" style="width: 200px;">
+                            <r>R</r>   <r style="margin-left: -1px;">E</r> <r style="margin-left: -1px;">N</r> <r style="margin-left: -1px;">T</r>  <r style="margin-left: 15px;">N</r> <r style="margin-left: -1px;">O</r> <r style="margin-left: -1px;">W</r>
                         </button>
-                        <button type="button" class="btn-2" href="carmodel.html">
-                            OUR VEHICLES
+                        <button type="button" class="btn-2" href="carmodel.html" style="width: 200px;">
+                            <r>O</r><r style="margin-left: 4px;">U</r><r style="margin-left: 4px;">R</r>  <r style="margin-left: 15px;">V</r><r style="margin-left: 4px;">E</r><r style="margin-left: 4px;">H</r><r style="margin-left: 4px;">I</r><r style="margin-left: 4px;">C</r><r style="margin-left: 4px;">L</r><r style="margin-left: 4px;">E</r><r style="margin-left: 4.5px;">S</r>
                         </button>
                     </div>
                 </div>
@@ -755,6 +738,14 @@
                                             style=" font-size:34px;color:rgb(255, 255, 255)"></i></div>
                                     <span style="color: #fc0303">YouTube</span>
                                 </a>
+                                <a class="button" href="#foorear">
+                                    <div class="icon">
+                                        <i class="fa fa-google" style="font-size:40px;color:rgb(255, 255, 255)"></i>
+                                    </div>
+                                    <span style="color: #176af0">Google</span>
+                                </a>
+                               
+                                
 
 
 
@@ -783,7 +774,7 @@
             </footer>
         </div>
     </footer>
-<!-- =================================================== Footer End =============================================================== -->
+    <!-- =================================================== Footer End =============================================================== -->
 
     <script>
         var slideimg = document.getElementById("slideimg");
@@ -822,9 +813,7 @@
         crossorigin="anonymous"></script>-->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <script>
-        AOS.init();
-    </script>
+    <script src="./Validation/validation.js"></script>
 </body>
 
 </html>
