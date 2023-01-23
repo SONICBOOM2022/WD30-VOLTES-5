@@ -241,21 +241,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page"
-                href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page"
-                href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/carmodel.html">Vehicles</a>
-            </li>            
+              <a class="nav-link" aria-current="page" href="carmodel.html">Vehicles</a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link"
-                href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/termsandconditions.html">Terms and
+              <a class="nav-link" href="termsandconditions.html">Terms and
                 Conditions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"
-                href="file:///F:/usb/Kodego/coding/WD30-VOLTES-5/GFive/underconstruction.html">About Us</a>
+              <a class="nav-link" href="underconstruction.html">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contactus.html">Contact Us</a>
@@ -344,20 +340,20 @@
     <p>Please contact us via the following form. We will reply within 24 hrs.</p>
   </div>
   <div class="container">
-    <form class="row g-3 w-75 mx-auto">
-      <div class="col-md-6">
+    <form class="row g-3 w-75 mx-auto" id="contact-form" onsubmit="sendEmail(); reset(); return false;">
+      <div class="col-md-6" id="name">
         <input type="text" class="form-control" placeholder="Full Name">
       </div>
       <div class="col-md-6">
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        <input type="email" class="form-control" id="email" placeholder="Email">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" id="subject">
         <input type="text" class="form-control" placeholder="Subject">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" id="number">
         <input type="text" class="form-control" placeholder="Phone Number">
       </div>
-      <div class="col-12">
+      <div class="col-12" id="message">
         <textarea class="form-control" placeholder="Your message" style="height: 150px"></textarea>
       </div>
       <div class="col-12" id="submit">
@@ -408,6 +404,22 @@
       }
     };
   </script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "marlowetan2023@gmail.com",
+        Password: "00C5FDDDFA8202D2E47F02316F75E4A5E5C8",
+        To: 'marlowetan2023@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "Contact form",
+        Body: "My body"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
