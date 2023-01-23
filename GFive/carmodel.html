@@ -210,6 +210,509 @@ background: radial-gradient(circle, rgba(203,201,196,0.7844887955182073) 14%, rg
 }
 
 
+ 
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .modal-backdrop {
+            opacity: 0.5 !important;
+        }
+
+        .navbar-toggler-icon {
+
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 209, 129, 1429' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar-light .navbar-toggler {
+            box-shadow: none;
+        }
+        
+        
+        .navbar-nav {
+            gap: 50px;
+        }
+
+        .nav-item .nav-link {
+            color: white;
+            font-size: 18px;
+            font-weight: normal;
+                
+        }
+
+        il.navbarMenu {
+            width: 800px;
+            margin-left: 0px;
+        }
+
+        .navbarMenu {
+            gap: 25px;
+            list-style-type: none;
+            display: flex;;
+            
+        }
+        
+             
+
+        .nav-item a:hover {
+            background: rgb(255, 209, 129);
+            background: #ff6d00;
+            border-radius: 5px;
+            transition: 0.0s;
+            color: #fffefe;
+        }
+
+        .dropdown-menu {
+            background-color: white;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #ffd181;
+        }
+
+        button {
+            width: 140px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px solid #ffd181;
+            background: transparent;
+        }
+
+        .btn {
+            background-color: #FF6d00;
+        }
+
+        .btn1 {
+            color: white;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        .btn1:hover {
+            font-weight: bold;
+            background-color: #dd6d00;
+        }
+
+        .modal-body button {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #dd6d00;
+            border-color: black;
+        }
+
+        .modal-body button:hover {
+            font-weight: normal;
+            border-color: gray;
+            background-color: rgb(70, 70, 70);
+        }
+
+        .modal-body {
+            background: #ffd181;
+        }
+
+        .modal-body a,
+        .modal-footer a {
+            color: black;
+        }
+
+
+        .modal-header {
+            background: rgb(255, 209, 129);
+            background: linear-gradient(0deg, rgba(255, 209, 129, 1) 8%, rgba(255, 109, 0, 1) 69%);
+
+        }
+
+        .modal-footer {
+            background: rgb(255, 209, 129);
+            background: linear-gradient(180deg, rgba(255, 209, 129, 1) 8%, rgba(255, 109, 0, 1) 69%);
+
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            animation: zoom 3s linear infinite;
+            transition: 2s;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1.3);
+            }
+
+            15% {
+                transform: scale(1);
+            }
+
+            85% {
+                transform: scale(1.3);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #slideimg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+            position: absolute;
+            top: 0;
+        }
+
+        .content2 {
+            width: 95%;
+            margin-top: 100px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            font-family: sans-serif;
+        }
+
+        .content2 p {
+            line-height: 60px;
+            font-size: larger;
+            font-style: italic;
+            color: #ffd181;
+            font-weight: bold;
+        }
+
+        .content2 h1 {
+            font-size: 70px;
+            line-height: 100px;
+        }
+
+        .btn-1:hover {
+            background-color: #ff6d00;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .btn-2:hover {
+            background-color: #ff6d00;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        span {
+            color: #ff6d00;
+        }
+
+        .slider2 {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .rentnow {
+            line-height: 53px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #ff6d00;
+        }
+
+        .rentnow button {
+            margin-left: 20px;
+            color: #fff;
+            padding: 0px;
+            border-radius: 12px;
+        }
+
+        .btn-1 {
+            background-color: #ff6d00;
+        }
+
+        .footer {
+            position: relative;
+            display: block;
+            justify-content: center;
+            align-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            bottom: 0;
+            background: rgb(255, 255, 255);
+            background: #ff6d00;
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+            padding-left: 10px;
+            padding-bottom: 100px;
+            height: 500px;
+            margin-bottom: 0px;
+        }
+
+        .col-md-2 {
+            flex: 0 0 auto;
+            width: 24.666667%;
+        }
+
+        .row {
+            width: auto;
+        }
+
+        button.btn {
+            background-color: #FF6d00;
+            border-color: #ffd181;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        button.btn:hover {
+            background-color: #FF6d00;
+            color: #ffffff;
+            border-color: #ffd181;
+            font-weight: bold;
+        }
+
+        .modal .icon {
+            padding: 12px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 20px;
+
+
+        }
+
+        .modal .icon .bi-facebook {
+            color: #385999;
+            background: #ffd181;
+        }
+
+        .modal .icon .bi-instagram {
+            color: #e1306c;
+            background: #ffd181;
+        }
+
+        .modal .icon .bi-twitter {
+            color: #46C1F6;
+            background: #ffd181;
+        }
+
+        .modal .icon .bi-google {
+            color: #4885ed;
+            background: #ffd181;
+        }
+
+        .modal .icon .tooltip {
+            position: absolute;
+            top: 0px;
+            background: white;
+            color: white;
+            font-size: 20px;
+            padding: 10px 18px;
+            border-radius: 25px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.1s;
+
+        }
+
+        .modal .icon:hover .tooltip {
+            top: 370px;
+            opacity: 1;
+            pointer-events: auto;
+
+        }
+
+        .facebook:hover span,
+        .facebook:hover .tooltip,
+        .facebook:hover .tooltip:before {
+            background: #385999;
+            left: 16%;
+        }
+
+        .instagram:hover span,
+        .instagram:hover .tooltip,
+        .instagram:hover .tooltip:before {
+            background: #e1306c;
+            left: 30%;
+        }
+
+        .twitter:hover span,
+        .twitter:hover .tooltip,
+        .twitter:hover .tooltip:before {
+            background: #46C1F6;
+            left: 47%;
+        }
+
+        .google:hover span,
+        .google:hover .tooltip,
+        .google:hover .tooltip:before {
+            background: #4885ed;
+            left: 60%;
+
+        }
+
+        .icon .fa.fa-facebook-f::before {
+            margin-left: 13px;
+        }
+
+        .icon .fa.fa-instagram::before {
+            padding-left: 8px;
+        }
+
+        .icon .fa.fa-twitter::before {
+            padding-left: 8px;
+        }
+
+        .icon .fa.fa-youtube-play::before {
+            padding-left: 8px;
+        }
+        .icon .fa.fa-google::before {
+            padding-left: 8px;
+        }
+
+        .wrapper .button {
+            display: inline-flex;
+            text-decoration: none;
+            gap: 25px;
+            height: 50px;
+            width: 50px;
+            margin-top: 30px;
+            float: left;
+            margin: 0 5px;
+            overflow: hidden;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(36deg,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(255, 209, 129, 0.819765406162465) 58%);
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+        }
+
+        .wrapper .button:hover {
+            width: 200px;
+            background-color: #ffffff;
+        }
+
+        .wrapper .button .icon {
+            display: inline-block;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            border-radius: 70px;
+            line-height: 60px;
+            transition: all 0.3s ease-out;
+        }
+
+        .wrapper .button:nth-child(1):hover .icon {
+            background: #4400ff;
+            padding-right: 15px;
+        }
+
+        .wrapper .button:nth-child(2):hover .icon {
+            background: rgb(64, 93, 230);
+            background: linear-gradient(85deg,
+                    rgba(64, 93, 230, 1) 0%,
+                    rgba(131, 58, 180, 1) 20%,
+                    rgba(253, 29, 29, 1) 50%,
+                    rgba(252, 176, 69, 1) 90%,
+                    rgba(255, 220, 128, 1) 100%);
+            padding-right: 19.5px;
+        }
+
+        .wrapper .button:nth-child(3):hover .icon {
+            background: #1da1f2;
+            padding-right: 10px;
+        }
+
+        .wrapper .button:nth-child(4):hover .icon {
+            background: #fc0303;
+            padding-right: 10px;
+        }
+
+        .wrapper .button:nth-child(5):hover .icon {
+            background: rgb(64, 93, 230);
+            background: linear-gradient(85deg,
+                    
+                    rgb(35, 189, 14) 15%,
+                    rgb(29, 70, 253) 50%,
+                    rgb(226, 41, 17) 70%,
+                    rgb(255, 251, 0) 100%);
+            padding-right: 19.5px;
+        }
+        .wrapper .button .icon i {
+            font-size: 2px;
+            line-height: 53px;
+
+        }
+
+        .wrapper .button span {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 50px;
+            margin-left: 5px;
+        }
+
+        .container {
+            margin: auto;
+            width: 100%;
+        }
+
+        @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+        .footheader {
+            position: relative;
+            text-align: center;
+            background-image: linear-gradient(to right top,
+                    #cc7833,
+                    #c27c2d,
+                    #ca7a39,
+                    #cf7a18,
+                    #f59f3d);
+            color: white;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+       
+
+        .content {
+            position: relative;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+        }
+
+       
+  
+
+
 </style>
 </head>
 
