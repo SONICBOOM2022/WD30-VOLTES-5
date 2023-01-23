@@ -34,6 +34,7 @@
         .nav-item .nav-link {
             color: white;
             font-size: 17px;
+            font-weight: normal;
         }
 
         .nav-item a:hover {
@@ -70,12 +71,12 @@
 
         .btn1 {
             color: white;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 20px;
         }
 
         .btn1:hover {
-            font-weight: normal;
+            font-weight: bold;
             background-color: #dd6d00;
         }
 
@@ -90,7 +91,11 @@
         #header.sticky {
             background: black;
         }
-
+        @media only screen and (max-width: 991px) {
+            #header {
+                background: black;
+            }
+        }
         /* NAVBAR END */
 
 
@@ -368,11 +373,7 @@
             color: white;
         }
 
-        @media only screen and (max-width: 991px) {
-            #header {
-                background: black;
-            }
-        }
+        
     </style>
 </head>
 
@@ -936,13 +937,6 @@
                 </footer>
             </div>
         </footer>
-
-
-
-
-
-
-
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
