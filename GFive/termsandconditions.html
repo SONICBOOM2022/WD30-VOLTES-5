@@ -34,6 +34,7 @@
         .nav-item .nav-link {
             color: white;
             font-size: 17px;
+            font-weight: normal;
         }
 
         .nav-item a:hover {
@@ -70,12 +71,12 @@
 
         .btn1 {
             color: white;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 20px;
         }
 
         .btn1:hover {
-            font-weight: normal;
+            font-weight: bold;
             background-color: #dd6d00;
         }
 
@@ -90,7 +91,11 @@
         #header.sticky {
             background: black;
         }
-
+        @media only screen and (max-width: 991px) {
+            #header {
+                background: black;
+            }
+        }
         /* NAVBAR END */
 
 
@@ -261,7 +266,7 @@
             left: 60%;
         }
 
-        .icon .fa.fa-facebook-f::before {
+        .icon .fa fa-facebook-f::before {
             margin-left: 13px;
         }
 
@@ -368,11 +373,7 @@
             color: white;
         }
 
-        @media only screen and (max-width: 991px) {
-            #header {
-                background: black;
-            }
-        }
+        
     </style>
 </head>
 
@@ -392,20 +393,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page"
+                                href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="carmodel.html">Vehicles</a>
+                            <a class="nav-link" aria-current="page"
+                                href="carmodel.html">Vehicles</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Terms and Conditions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="underconstruction.html">About
+                            <a class="nav-link"
+                                href="underconstruction.html">About
                                 Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                            <a class="nav-link"
+                                href="contactus.html">Contact Us</a>
                         </li>
                     </ul>
                     <form class="d-flex mx-auto">
@@ -424,59 +429,38 @@
                                         <button type="button" class="btn-close btn-light" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body px-5">
-                                        <form>
-                                            <div class="mb-3 w-100">
-                                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                                    aria-describedby="emailHelp" placeholder="Email">
-                                            </div>
-                                            <div class="mb-3 w-100">
-                                                <input type="password" class="form-control my-3"
-                                                    id="exampleInputPassword1" placeholder="Password">
-                                            </div>
-                                            <div class="mb-3 form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                                    checked>
-                                                <label class="form-check-label" for="exampleCheck1">Keep me
-                                                    signed in</label>
-                                            </div>
-                                            <p class="w-100">Selecting this checkbox will keep you signed into
-                                                your account on this device until
-                                                you
-                                                sign out. Do not select this on shared devices.</p>
-                                            <button type="submit" class="btn btn-dark w-75 mx-5">Sign
-                                                in</button>
-                                            <div class="col-9 mx-auto">
-                                                <p class="text-center"><a href="#" class="text-decoration-none"
-                                                        style="color: blue;">Forgot password?</a></p>
-                                            </div>
-                                            <p>Don't have an account? <a href="signup.html" class="text-decoration-none"
-                                                    style="color: blue;">Create
-                                                    one.</a></p>
-                                            <p>or continue with</p>
-                                            <div class="row mx-5">
-                                                <div class="icon facebook col-1">
-                                                    <div class="tooltip">Facebook</div>
-                                                    <span><i class="bi bi-facebook"></i></span>
-                                                </div>
-                                                <div class="icon instagram col-2">
-                                                    <div class="tooltip">Instagram</div>
-                                                    <span><i class="bi bi-instagram"></i></span>
-                                                </div>
-                                                <div class="icon twitter col-3">
-                                                    <div class="tooltip">Twitter</div>
-                                                    <span><i class="bi bi-twitter"></i></span>
-                                                </div>
-                                                <div class="icon google col-4">
-                                                    <div class="tooltip">Google</div>
-                                                    <span><i class="bi bi-google"></i></span>
-                                                </div>
-                                            </div>
-                                        </form>
+                                    <div class="modal-body">
+                                        <button type="button" class="btn btn-dark w-100"
+                                            href="login.html">Sign
+                                            in</button>
+                                        <h5><a href="signup.html"
+                                                class="text-decoration-none">Create a free account</a></h5>
+                                        <p>or continue with</p>
+                                        <h5><a href="underconstruction.html"
+                                                class="text-decoration-none">List of favorites</a></h5>
+                                        <h5><a href="underconstruction.html"
+                                                class="text-decoration-none">Loyalty programs</a></h5>
                                     </div>
                                     <div class="modal-footer">
                                         <h5><a href="underconstruction.html"
-                                                class="text-decoration-none justify-left">Feedback</a></h5>
+                                                class="text-decoration-none">Feedback</a></h5>
+<<<<<<< Updated upstream
+=======
+                                        <button type="button" class="btn btn-dark w-100" href="login.html">Sign
+                                            in</button>
+                                        <h5><a href="signup.html" class="text-decoration-none">Create a free account</a>
+                                        </h5>
+                                        <p>or continue with</p>
+                                        <h5><a href="underconstruction.html" class="text-decoration-none">List of
+                                                favorites</a></h5>
+                                        <h5><a href="underconstruction.html" class="text-decoration-none">Loyalty
+                                                programs</a></h5>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h5><a href="underconstruction.html" class="text-decoration-none">Feedback</a>
+                                        </h5>
+=======
+>>>>>>> Stashed changes
                                     </div>
                                 </div>
                             </div>
@@ -953,13 +937,6 @@
                 </footer>
             </div>
         </footer>
-
-
-
-
-
-
-
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
