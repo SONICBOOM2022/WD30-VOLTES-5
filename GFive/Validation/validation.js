@@ -20,7 +20,7 @@ const options = {
         'X-RapidAPI-Host': 'email-verifier-completely-free.p.rapidapi.com'
     }
 };
-
+// sdfdgsdfhgh
 const form = document.getElementById('email-form');
 const emailInput = document.getElementById('email');
 const resultEl = document.getElementById('result');
