@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G'Five Rentals</title>
-    
+
     <!-- <link rel="stylesheet" href="./images/New folder/Pending/index.html"> -->
     <!-- <link rel="stylesheet" href="./images/New folder/Pending/indexVIP .html"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
@@ -35,6 +35,7 @@
             color: white;
             font-size: 17px;
             font-weight: normal;
+            letter-spacing: 4px;
 
         }
 
@@ -75,6 +76,7 @@
             color: white;
             font-weight: normal;
             font-size: 20px;
+            letter-spacing: 3px;
         }
 
         .btn1:hover {
@@ -91,30 +93,17 @@
         }
 
         #header.sticky {
-
             background: black;
 
         }
+
         @media only screen and (max-width: 991px) {
             #header {
                 background: black;
             }
         }
 
-        /* il.navbarMenu {
-            width: 800px;
-            margin-left: 0px;
-        }
-
-        .navbarMenu {
-            gap: 25px;
-            list-style-type: none;
-            display: flex;
-            ;
-
-        } */
-
-        /* NAVBAR END */
+       /* NAVBAR END */
 
 
         /* MODAL START */
@@ -124,14 +113,15 @@
 
         .modal-body button {
             color: white;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 20px;
             background-color: #dd6d00;
             border-color: black;
+            letter-spacing: 2px;
         }
 
         .modal-body button:hover {
-            font-weight: normal;
+            font-weight: bold;
             border-color: gray;
             background-color: rgb(70, 70, 70);
         }
@@ -154,49 +144,39 @@
             left: 16%;
         }
 
-        .instagram:hover span,
-        .instagram:hover .tooltip,
-        .instagram:hover .tooltip:before {
-            background: #e1306c;
-            left: 30%;
-        }
 
-        .twitter:hover span,
-        .twitter:hover .tooltip,
-        .twitter:hover .tooltip:before {
-            background: #46C1F6;
-            left: 47%;
-        }
-
-        .google:hover span,
-        .google:hover .tooltip,
-        .google:hover .tooltip:before {
-            background: #4885ed;
-            left: 60%;
-
-        }
-
-        .icon .fa.fa-facebook-f::before {
-            margin-left: 13px;
-        }
-
-        .icon .fa.fa-instagram::before {
-            padding-left: 8px;
-        }
-
-        .icon .fa.fa-twitter::before {
-            padding-left: 8px;
-        }
-
-        .icon .fa.fa-youtube-play::before {
-            padding-left: 8px;
-        }
-
-        .icon .fa.fa-google::before {
-            padding-left: 8px;
-        }
-        .wrapper .button {
+        .modal .button {
             display: inline-flex;
+            text-decoration: none;
+            gap: 25px;
+            height: 50px;
+            width: 50px;
+            margin-top: 30px;
+            float: left;
+            margin: 0 5px;
+            overflow: hidden;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(36deg,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(255, 209, 129, 0.819765406162465) 58%);
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+
+        }
+
+        .modal .button:hover {
+            width: 200px;
+            background-color: #ffffff;
+        }
+
+        .modal .icon {
+            padding: 12px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+
             text-decoration: none;
             gap: 25px;
             height: 50px;
@@ -222,13 +202,8 @@
 
         .wrapper .button .icon {
             display: inline-block;
-            justify-content: center;
-            height: 50px;
-            width: 50px;
-            text-align: center;
-            border-radius: 70px;
-            line-height: 60px;
-            transition: all 0.3s ease-out;
+            margin: 5px 13px;         
+
         }
 
         .wrapper .button:nth-child(1):hover .icon {
@@ -252,33 +227,15 @@
             padding-right: 10px;
         }
 
-        .wrapper .button:nth-child(4):hover .icon {
-            background: #fc0303;
-            padding-right: 10px;
+
+        .modal .icon .bi-youtube {
+            color: red;
+            background: #ffd181;
         }
 
-        .wrapper .button:nth-child(5):hover .icon {
-            background: rgb(64, 93, 230);
-            background: linear-gradient(85deg,
-
-                    rgb(35, 189, 14) 15%,
-                    rgb(29, 70, 253) 50%,
-                    rgb(226, 41, 17) 70%,
-                    rgb(255, 251, 0) 100%);
-            padding-right: 19.5px;
-        }
-
-        .wrapper .button .icon i {
-            font-size: 2px;
-            line-height: 53px;
-
-        }
-
-        .wrapper .button span {
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 50px;
-            margin-left: 5px;
+        .modal .icon .bi-google {
+            color: #4885ed;
+            background: #ffd181;
         }
 
 
@@ -386,7 +343,8 @@
             font-weight: bold;
             font-size: 16px;
             color: #ff6d00;
-            
+
+
         }
 
         .rentnow button {
@@ -430,19 +388,6 @@
             width: auto;
         }
 
-        button.btn {
-            background-color: #FF6d00;
-            border-color: #ffd181;
-            border-radius: 10px;
-            color: rgb(255, 255, 255);
-        }
-
-        button.btn:hover {
-            background-color: #FF6d00;
-            color: #ffffff;
-            border-color: #ffd181;
-            font-weight: bold;
-        }
         .facebook:hover span,
         .facebook:hover .tooltip,
         .facebook:hover .tooltip:before {
@@ -699,34 +644,24 @@
                                                             class="text-decoration-none" style="color: blue;">Create
                                                             one.</a></p>
                                                     <p>or continue with</p>
-                                                    <div class="modal">
-                                                        <a class="button" href="#foorear">
-                                                            <div class="icon"><i class="fa fa-facebook-f"
-                                                                    style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
-                                                            <span style="color: #4400ff">Facebook</span>
-                                                        </a>
-                                                        <a class="button" href="#foorear">
-                                                            <div class="icon"><i class="fa fa-instagram"
-                                                                    style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
-                                                            <span style="color: #833AB4">Instagram</span>
-                                                        </a>
-                                                        <a class="button" href="#foorear">
-                                                            <div class="icon"><i class="fa fa-twitter"
-                                                                    style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
-                                                            <span style="color: #1DA1F2">Twitter</span>
-                                                        </a>
-                                                        <a class="button" href="#foorer">
-                                                            <!-- /index/images/New folder/Pending/index.htmls -->
-                                                            <div class="icon"><i class="fa fa-youtube-play"
-                                                                    style=" font-size:34px;color:rgb(255, 255, 255)"></i></div>
-                                                            <span style="color: #fc0303">YouTube</span>
-                                                        </a>
-                                                        <a class="button" href="#foorear">
-                                                            <div class="icon">
-                                                                <i class="fa fa-google" style="font-size:40px;color:rgb(255, 255, 255)"></i>
-                                                            </div>
-                                                            <span style="color: #176af0">Google</span>
-                                                        </a>
+
+                                                    <div class="row mx-5">
+                                                        <div type="button" href="#" class="icon facebook col-1">
+                                                            <span><i class="bi bi-facebook"></i></span>
+                                                        </div>
+                                                        <div type="button" href="#" class="icon instagram col-2">
+                                                            <span><i class="bi bi-instagram"></i></span>
+                                                        </div>
+                                                        <div type="button" href="#" class="icon twitter col-3">
+                                                            <span><i class="bi bi-twitter"></i></span>
+                                                        </div>
+                                                        <div type="button" href="#" class="icon youtube col-3">
+                                                            <span><i class="bi bi-youtube"></i></span>
+                                                        </div>
+                                                        <div type="button" href="#" class="icon google col-4">
+                                                            <span><i class="bi bi-google"></i></span>
+                                                        </div>
+
                                                     </div>
                                                 </form>
                                             </div>
@@ -737,7 +672,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </form>     
+
+                            </form>
+
                         </div>
                 </nav>
             </div>
