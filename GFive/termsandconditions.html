@@ -35,7 +35,10 @@
             color: white;
             font-size: 17px;
             font-weight: normal;
+            letter-spacing: 3px;
+           
         }
+        
 
         .nav-item a:hover {
             background-color: #ff6d00;
@@ -91,11 +94,15 @@
         #header.sticky {
             background: black;
         }
+
         @media only screen and (max-width: 991px) {
             #header {
                 background: black;
             }
         }
+       
+
+
         /* NAVBAR END */
 
 
@@ -103,6 +110,7 @@
         .modal-backdrop {
             opacity: 0.5 !important;
         }
+
         .modal-body button {
             color: white;
             font-weight: bold;
@@ -110,21 +118,50 @@
             background-color: #dd6d00;
             border-color: black;
         }
+
         .modal-body button:hover {
             font-weight: normal;
             border-color: gray;
             background-color: rgb(70, 70, 70);
         }
+
         .modal-header h1,
         .modal-body a,
         .modal-footer a {
             color: black;
         }
+
         .modal-header,
         .modal-body,
         .modal-footer {
             background: #ffd181;
         }
+
+        .modal .button {
+            display: inline-flex;
+            text-decoration: none;
+            gap: 25px;
+            height: 50px;
+            width: 50px;
+            margin-top: 30px;
+            float: left;
+            margin: 0 5px;
+            overflow: hidden;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(36deg,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(255, 209, 129, 0.819765406162465) 58%);
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+        }
+
+        .modal .button:hover {
+            width: 200px;
+            background-color: #ffffff;
+        }
+
         .modal .icon {
             padding: 12px;
             font-size: 30px;
@@ -132,41 +169,31 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            margin: 5px 20px;
+            margin: 5px 13px;
         }
+
         .modal .icon .bi-facebook {
             color: #385999;
             background: #ffd181;
         }
+
         .modal .icon .bi-instagram {
             color: #e1306c;
             background: #ffd181;
         }
+
         .modal .icon .bi-twitter {
             color: #46C1F6;
             background: #ffd181;
         }
+        .modal .icon .bi-youtube {
+            color: red;
+            background: #ffd181;
+        }
+
         .modal .icon .bi-google {
             color: #4885ed;
             background: #ffd181;
-        }
-        .modal .icon .tooltip {
-            position: absolute;
-            top: 0px;
-            background: white;
-            color: white;
-            font-size: 20px;
-            padding: 10px 18px;
-            border-radius: 25px;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            pointer-events: none;
-            transition: all 0.1s;
-        }
-        .modal .icon:hover .tooltip {
-            top: 370px;
-            opacity: 1;
-            pointer-events: auto;
         }
         /* MODAL END */
 
@@ -372,8 +399,6 @@
                     #f59f3d);
             color: white;
         }
-
-        
     </style>
 </head>
 
@@ -393,24 +418,20 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page"
-                                href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page"
-                                href="carmodel.html">Vehicles</a>
+                            <a class="nav-link" aria-current="page" href="carmodel.html">Vehicles</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Terms and Conditions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="underconstruction.html">About
+                            <a class="nav-link" href="underconstruction.html">About
                                 Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="contactus.html">Contact Us</a>
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
                         </li>
                     </ul>
                     <form class="d-flex mx-auto">
@@ -429,38 +450,57 @@
                                         <button type="button" class="btn-close btn-light" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
-                                        <button type="button" class="btn btn-dark w-100"
-                                            href="login.html">Sign
-                                            in</button>
-                                        <h5><a href="signup.html"
-                                                class="text-decoration-none">Create a free account</a></h5>
-                                        <p>or continue with</p>
-                                        <h5><a href="underconstruction.html"
-                                                class="text-decoration-none">List of favorites</a></h5>
-                                        <h5><a href="underconstruction.html"
-                                                class="text-decoration-none">Loyalty programs</a></h5>
+                                    <div class="modal-body px-5">
+                                        <form>
+                                            <div class="mb-3 w-100">
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="Email">
+                                            </div>
+                                            <div class="mb-3 w-100">
+                                                <input type="password" class="form-control my-3"
+                                                    id="exampleInputPassword1" placeholder="Password">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1"
+                                                    checked>
+                                                <label class="form-check-label" for="exampleCheck1">Keep me
+                                                    signed in</label>
+                                            </div>
+                                            <p class="w-100">Selecting this checkbox will keep you signed into
+                                                your account on this device until
+                                                you
+                                                sign out. Do not select this on shared devices.</p>
+                                            <button type="submit" class="btn btn-dark w-75 mx-5">Sign
+                                                in</button>
+                                            <div class="col-9 mx-auto">
+                                                <p class="text-center"><a href="#" class="text-decoration-none"
+                                                        style="color: blue;">Forgot password?</a></p>
+                                            </div>
+                                            <p>Don't have an account? <a href="signup.html" class="text-decoration-none"
+                                                    style="color: blue;">Create one.</a></p>
+                                            <p>or continue with</p>
+                                            <div class="row mx-5">
+                                                <div type="button" href="#" class="icon facebook col-1">
+                                                    <span><i class="bi bi-facebook"></i></span>
+                                                </div>
+                                                <div type="button" href="#" class="icon instagram col-2">
+                                                    <span><i class="bi bi-instagram"></i></span>
+                                                </div>
+                                                <div type="button" href="#" class="icon twitter col-3">
+                                                    <span><i class="bi bi-twitter"></i></span>
+                                                </div>
+                                                <div type="button" href="#" class="icon youtube col-3">
+                                                    <span><i class="bi bi-youtube"></i></span>
+                                                </div>
+                                                <div type="button" href="#" class="icon google col-4">
+                                                    <span><i class="bi bi-google"></i></span>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="modal-footer">
                                         <h5><a href="underconstruction.html"
-                                                class="text-decoration-none">Feedback</a></h5>
-<<<<<<< Updated upstream
-=======
-                                        <button type="button" class="btn btn-dark w-100" href="login.html">Sign
-                                            in</button>
-                                        <h5><a href="signup.html" class="text-decoration-none">Create a free account</a>
-                                        </h5>
-                                        <p>or continue with</p>
-                                        <h5><a href="underconstruction.html" class="text-decoration-none">List of
-                                                favorites</a></h5>
-                                        <h5><a href="underconstruction.html" class="text-decoration-none">Loyalty
-                                                programs</a></h5>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <h5><a href="underconstruction.html" class="text-decoration-none">Feedback</a>
-                                        </h5>
-=======
->>>>>>> Stashed changes
+                                                class="text-decoration-none justify-left">Feedback</a></h5>
                                     </div>
                                 </div>
                             </div>
