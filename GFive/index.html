@@ -147,57 +147,142 @@
         .modal-footer {
             background: #ffd181;
         }
+        .facebook:hover span,
+        .facebook:hover .tooltip,
+        .facebook:hover .tooltip:before {
+            background: #385999;
+            left: 16%;
+        }
 
-        .modal .icon {
-            padding: 12px;
-            font-size: 30px;
-            width: 30px;
-            text-align: center;
+        .instagram:hover span,
+        .instagram:hover .tooltip,
+        .instagram:hover .tooltip:before {
+            background: #e1306c;
+            left: 30%;
+        }
+
+        .twitter:hover span,
+        .twitter:hover .tooltip,
+        .twitter:hover .tooltip:before {
+            background: #46C1F6;
+            left: 47%;
+        }
+
+        .google:hover span,
+        .google:hover .tooltip,
+        .google:hover .tooltip:before {
+            background: #4885ed;
+            left: 60%;
+
+        }
+
+        .icon .fa.fa-facebook-f::before {
+            margin-left: 13px;
+        }
+
+        .icon .fa.fa-instagram::before {
+            padding-left: 8px;
+        }
+
+        .icon .fa.fa-twitter::before {
+            padding-left: 8px;
+        }
+
+        .icon .fa.fa-youtube-play::before {
+            padding-left: 8px;
+        }
+
+        .icon .fa.fa-google::before {
+            padding-left: 8px;
+        }
+        .wrapper .button {
+            display: inline-flex;
             text-decoration: none;
+            gap: 25px;
+            height: 50px;
+            width: 50px;
+            margin-top: 30px;
+            float: left;
+            margin: 0 5px;
+            overflow: hidden;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(36deg,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(255, 209, 129, 0.819765406162465) 58%);
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+        }
+
+        .wrapper .button:hover {
+            width: 200px;
+            background-color: #ffffff;
+        }
+
+        .wrapper .button .icon {
             display: inline-block;
-            margin: 5px 20px;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            border-radius: 70px;
+            line-height: 60px;
+            transition: all 0.3s ease-out;
         }
 
-        .modal .icon .bi-facebook {
-            color: #385999;
-            background: #ffd181;
+        .wrapper .button:nth-child(1):hover .icon {
+            background: #4400ff;
+            padding-right: 15px;
         }
 
-        .modal .icon .bi-instagram {
-            color: #e1306c;
-            background: #ffd181;
+        .wrapper .button:nth-child(2):hover .icon {
+            background: rgb(64, 93, 230);
+            background: linear-gradient(85deg,
+                    rgba(64, 93, 230, 1) 0%,
+                    rgba(131, 58, 180, 1) 20%,
+                    rgba(253, 29, 29, 1) 50%,
+                    rgba(252, 176, 69, 1) 90%,
+                    rgba(255, 220, 128, 1) 100%);
+            padding-right: 19.5px;
         }
 
-        .modal .icon .bi-twitter {
-            color: #46C1F6;
-            background: #ffd181;
+        .wrapper .button:nth-child(3):hover .icon {
+            background: #1da1f2;
+            padding-right: 10px;
         }
 
-        .modal .icon .bi-google {
-            color: #4885ed;
-            background: #ffd181;
+        .wrapper .button:nth-child(4):hover .icon {
+            background: #fc0303;
+            padding-right: 10px;
         }
 
-        .modal .icon .tooltip {
-            position: absolute;
-            top: 0px;
-            background: white;
-            color: white;
+        .wrapper .button:nth-child(5):hover .icon {
+            background: rgb(64, 93, 230);
+            background: linear-gradient(85deg,
+
+                    rgb(35, 189, 14) 15%,
+                    rgb(29, 70, 253) 50%,
+                    rgb(226, 41, 17) 70%,
+                    rgb(255, 251, 0) 100%);
+            padding-right: 19.5px;
+        }
+
+        .wrapper .button .icon i {
+            font-size: 2px;
+            line-height: 53px;
+
+        }
+
+        .wrapper .button span {
             font-size: 20px;
-            padding: 10px 18px;
-            border-radius: 25px;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            pointer-events: none;
-            transition: all 0.1s;
+            font-weight: 500;
+            line-height: 50px;
+            margin-left: 5px;
         }
 
-        .modal .icon:hover .tooltip {
-            top: 370px;
-            opacity: 1;
-            pointer-events: auto;
-        }       
 
+        
         /* MODAL END */
 
 
@@ -301,6 +386,7 @@
             font-weight: bold;
             font-size: 16px;
             color: #ff6d00;
+            
         }
 
         .rentnow button {
@@ -308,6 +394,8 @@
             color: #fff;
             padding: 0px;
             border-radius: 12px;
+            letter-spacing: 3px;
+
         }
 
         .btn-1 {
@@ -611,23 +699,34 @@
                                                             class="text-decoration-none" style="color: blue;">Create
                                                             one.</a></p>
                                                     <p>or continue with</p>
-                                                    <div class="row mx-5">
-                                                        <div class="icon facebook col-1">
-                                                            <div class="tooltip">Facebook</div>
-                                                            <span><i class="bi bi-facebook"></i></span>
-                                                        </div>
-                                                        <div class="icon instagram col-2">
-                                                            <div class="tooltip">Instagram</div>
-                                                            <span><i class="bi bi-instagram"></i></span>
-                                                        </div>
-                                                        <div class="icon twitter col-3">
-                                                            <div class="tooltip">Twitter</div>
-                                                            <span><i class="bi bi-twitter"></i></span>
-                                                        </div>
-                                                        <div class="icon google col-4">
-                                                            <div class="tooltip">Google</div>
-                                                            <span><i class="bi bi-google"></i></span>
-                                                        </div>
+                                                    <div class="modal">
+                                                        <a class="button" href="#foorear">
+                                                            <div class="icon"><i class="fa fa-facebook-f"
+                                                                    style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
+                                                            <span style="color: #4400ff">Facebook</span>
+                                                        </a>
+                                                        <a class="button" href="#foorear">
+                                                            <div class="icon"><i class="fa fa-instagram"
+                                                                    style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
+                                                            <span style="color: #833AB4">Instagram</span>
+                                                        </a>
+                                                        <a class="button" href="#foorear">
+                                                            <div class="icon"><i class="fa fa-twitter"
+                                                                    style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
+                                                            <span style="color: #1DA1F2">Twitter</span>
+                                                        </a>
+                                                        <a class="button" href="#foorer">
+                                                            <!-- /index/images/New folder/Pending/index.htmls -->
+                                                            <div class="icon"><i class="fa fa-youtube-play"
+                                                                    style=" font-size:34px;color:rgb(255, 255, 255)"></i></div>
+                                                            <span style="color: #fc0303">YouTube</span>
+                                                        </a>
+                                                        <a class="button" href="#foorear">
+                                                            <div class="icon">
+                                                                <i class="fa fa-google" style="font-size:40px;color:rgb(255, 255, 255)"></i>
+                                                            </div>
+                                                            <span style="color: #176af0">Google</span>
+                                                        </a>
                                                     </div>
                                                 </form>
                                             </div>
@@ -638,175 +737,10 @@
                                         </div>
                                     </div>
                                 </div>
+                            </form>     
                         </div>
                 </nav>
             </div>
-            <!-- <div class="container-fluid" style="width: 100%; margin-left: 0px;">
-                <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%;">
-                    <a class="navbar-brand">
-                        <img src="./G5-Logo-B-White-on-Black-Border-V1.png" alt="Logo" width="180"
-                            style="padding-left:20px;" height="100" class="d-inline-block align-text-top">
-                    </a>
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width: 693px;">
-                        <ul class="navbarMenu" style="width: 693px; margin-left: 0px; padding-left: 0px;">
-                            <li class="nav-item" style="width: 77px;">
-                                <a class="nav-link" style="width: 75px; padding-left: 5px; font-size: 21px;"
-                                    aria-current="page" href="#">
-                                    <r>H</r>
-                                    <r style="margin-left:2px;">o</r>
-                                    <r style="margin-left:2.5px;">m</r>
-                                    <r style="margin-left:-3.5px;">e</r>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="width: 92px; padding-left: 4px; font-size: 21px;"
-                                    aria-current="page" href="carmodel.html">
-                                    <r>V</r>
-                                    <r style="margin-left: -5px;">e</r>
-                                    <r style="margin-left: -4px;">h</r>
-                                    <r style="margin-left: 1px;">i</r>
-                                    <r style="margin-left: 1px;">c</r>
-                                    <r style="margin-left: 1px;">l</r>
-                                    <r style="margin-left: 1px;">e</r>
-                                    <r style="margin-left: 1px;">s</r>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="width: 250px; padding-left: 5px; font-size: 21px;"
-                                    href="termsandconditions.html">
-                                    <r>T</r>
-                                    <r style="margin-left: 1px;">e</r>
-                                    <r style="margin-left: 1.5px;">r</r>
-                                    <r style="margin-left: 2.5px;">m</r>
-                                    <r style="margin-left: 2px;">s</r>
-                                    <r style="margin-left: 10px;">a</r>
-                                    <r style="margin-left: 2px;">n</r>
-                                    <r style="margin-left: 2px;">d</r>
-                                    <r style="margin-left: 10px;">C</r>
-                                    <r style="margin-left: 2px;">o</r>
-                                    <r style="margin-left: 2px;">n</r>
-                                    <r style="margin-left: 2px;">d</r>
-                                    <r style="margin-left: 2px;">i</r>
-                                    <r style="margin-left: 2px;">t</r>
-                                    <r style="margin-left: 2px;">i</r>
-                                    <r style="margin-left: 2px;">o</r>
-                                    <r style="margin-left: 2px;">n</r>
-                                    <r style="margin-left: 2px;">s</r>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="width: 110px; padding-left: 5px; font-size: 21px;"
-                                    href="underconstruction.html">
-                                    <r>A</r>
-                                    <r style="margin-left: 2px;">b</r>
-                                    <r style="margin-left: 2px;">o</r>
-                                    <r style="margin-left: 2px;">u</r>
-                                    <r style="margin-left: 2px;">t</r>
-                                    <r style="margin-left: 8px;">U</r>
-                                    <r style="margin-left: 2px;">s</r>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" style="width: 145px; padding-left: 5px; font-size: 21px;"
-                                    href="contactus.html">
-                                    <r>C</r>
-                                    <r style="margin-left: 3px;">o</r>
-                                    <r style="margin-left: 3px;">n</r>
-                                    <r style="margin-left: 3px;">t</r>
-                                    <r style="margin-left: 3px;">a</r>
-                                    <r style="margin-left: 3px;">c</r>
-                                    <r style="margin-left: 3px;">t</r>
-                                    <r style="margin-left: 10px;">U</r>
-                                    <r style="margin-left: 3px; margin-right: 0px;">s</r>
-                                </a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" style="margin-left:550px; margin-right: 0px;">
-                            <button type="button" class="btn1 " style="width: 200px;">
-                                <r>L</r>
-                                <r>o</r>
-                                <r>g</r>
-                                <r>i</r>
-                                <r>n
-                            </button>r>
-                            </button>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Members can access
-                                                discounts,
-                                                points and special features.</h1>
-                                            <button type="button" class="btn-close btn-light" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body px-5">
-                                            <form>
-                                                <div class="mb-3 w-100">
-                                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp" placeholder="Email">
-                                                </div>
-                                                <div class="mb-3 w-100">
-                                                    <input type="password" class="form-control my-3"
-                                                        id="exampleInputPassword1" placeholder="Password">
-                                                </div>
-                                                <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                                        checked>
-                                                    <label class="form-check-label" for="exampleCheck1">Keep me
-                                                        signed in</label>
-                                                </div>
-                                                <p class="w-100">Selecting this checkbox will keep you signed into
-                                                    your account on this device until
-                                                    you
-                                                    sign out. Do not select this on shared devices.</p>
-                                                <button type="submit" class="btn btn-dark w-75 mx-5">Sign
-                                                    in</button>
-                                                <div class="col-9 mx-auto">
-                                                    <p class="text-center"><a href="#" class="text-decoration-none"
-                                                            style="color: blue;">Forgot password?</a></p>
-                                                </div>
-                                                <p>Don't have an account? <a href="signup.html"
-                                                        class="text-decoration-none" style="color: blue;">Create
-                                                        one.</a></p>
-                                                <p>or continue with</p>
-                                                <div class="row mx-5">
-                                                    <div class="icon facebook col-1">
-                                                        <div class="tooltip">Facebook</div>
-                                                        <span><i class="bi bi-facebook"></i></span>
-                                                    </div>
-                                                    <div class="icon instagram col-2">
-                                                        <div class="tooltip">Instagram</div>
-                                                        <span><i class="bi bi-instagram"></i></span>
-                                                    </div>
-                                                    <div class="icon twitter col-3">
-                                                        <div class="tooltip">Twitter</div>
-                                                        <span><i class="bi bi-twitter"></i></span>
-                                                    </div>
-                                                    <div class="icon google col-4">
-                                                        <div class="tooltip">Google</div>
-                                                        <span><i class="bi bi-google"></i></span>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <div>
-                                                <div class="modal-footer">
-                                                    <h5><a href="underconstruction.html"
-                                                            class="text-decoration-none justify-left">Feedback</a></h5>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                </nav>
-            </div> -->
-
             <div class="content2">
                 <div>
 
@@ -815,27 +749,11 @@
                     <p>Drive your dream car with affordable rates!</p>
 
                     <div class="rentnow">
-                        <button type="button" class="btn-1" href="signup.html" style="width: 200px;">
-                            <r>R</r>
-                            <r style="margin-left: -1px;">E</r>
-                            <r style="margin-left: -1px;">N</r>
-                            <r style="margin-left: -1px;">T</r>
-                            <r style="margin-left: 15px;">N</r>
-                            <r style="margin-left: -1px;">O</r>
-                            <r style="margin-left: -1px;">W</r>
+                        <button type="button" class="btn-1" href="signup.html">
+                            RENT NOW
                         </button>
-                        <button type="button" class="btn-2" href="carmodel.html" style="width: 200px;">
-                            <r>O</r>
-                            <r style="margin-left: 4px;">U</r>
-                            <r style="margin-left: 4px;">R</r>
-                            <r style="margin-left: 15px;">V</r>
-                            <r style="margin-left: 4px;">E</r>
-                            <r style="margin-left: 4px;">H</r>
-                            <r style="margin-left: 4px;">I</r>
-                            <r style="margin-left: 4px;">C</r>
-                            <r style="margin-left: 4px;">L</r>
-                            <r style="margin-left: 4px;">E</r>
-                            <r style="margin-left: 4.5px;">S</r>
+                        <button type="button" class="btn-2" href="carmodel.html">
+                            OUR VEHICLES
                         </button>
                     </div>
                 </div>
@@ -930,11 +848,6 @@
                                     </div>
                                     <span style="color: #176af0">Google</span>
                                 </a>
-
-
-
-
-
                             </div>
 
                         </form>
