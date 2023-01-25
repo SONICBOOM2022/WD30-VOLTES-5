@@ -4,6 +4,16 @@
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.aboutusheadpic {
+    position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      min-width: 20rem;
+      height: 70vh;
+}
+
 
 
 /* NAVBAR START */
@@ -15,7 +25,7 @@
     color: white;
     font-size: 17px;
     font-weight: normal;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 
@@ -69,7 +79,7 @@ button {
       left: 0;
       right: 0;
       z-index: 100000;
-      background: rgba(0, 0, 0, 0.123);
+      background: rgba(0, 0, 0, 0.315);
     }
 
 #header.sticky {
@@ -81,8 +91,6 @@ button {
         background: black;
     }
 }
-
-
 
 /* NAVBAR END */
 
@@ -184,43 +192,57 @@ button {
 
 /* BODY START */
 .container {
-    width: 100wv;    
-    padding: 0px 1px 0px 1px;
+    width: 100%;    
+    padding: 0;     
+    
 }
-
-.article {
-    display: inline-block;
-    max-width: 85rem;
-    margin-top: 5%;
-    background: whitesmoke;
-    padding: 3%;
-}
-
-.terms {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100wv;
-    min-width: 20rem;
-    height: 120vh;
-}
-
-h6 {
-    border-left: 5px solid #FF6D00;
-    padding: 5px;
-}
-
 .container .header {
     text-align: center;
 }
 
 .container .header h1 {
     font-size: clamp(1rem, 1rem + 10vw, 4.375rem);
-    color: black;
+    color: white;
     font-weight: 600;
     width: 100%;
     margin-top: 170px;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+    max-width: 100%;
+    margin-top: 5%;
+    background: #dd6d00;
+    padding: 2rem 0;
+    min-width: 5rem;
+}
+.aboutus1 {    
+    width: 100%;
+    max-width: 500px;
+   
+       
+
+}
+.article p {
+    width: 100%;
+    max-width: 500px;
+    color: whitesmoke;
+    
+}
+.article2 {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.article2 .bodyicon {
+    width: 15rem;   
+    
+}
+.article2 .bodyicon svg {
+    margin-left: 5rem;
 }
 
 /* BODY END */
