@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G'Five Rentals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -24,7 +25,7 @@
         body {
             background-color: rgba(221, 109, 0, 0.5634628851540616);
         }
-
+        
 
         /* NAVBAR START */
         .navbar-nav {
@@ -35,8 +36,7 @@
             color: white;
             font-size: 17px;
             font-weight: normal;
-            letter-spacing: 3px;
-           
+            letter-spacing: 4px;           
         }
         
 
@@ -76,6 +76,7 @@
             color: white;
             font-weight: normal;
             font-size: 20px;
+            letter-spacing: 3px;
         }
 
         .btn1:hover {
@@ -113,14 +114,15 @@
 
         .modal-body button {
             color: white;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 20px;
             background-color: #dd6d00;
             border-color: black;
+            letter-spacing: 2px;
         }
 
         .modal-body button:hover {
-            font-weight: normal;
+            font-weight: bold;
             border-color: gray;
             background-color: rgb(70, 70, 70);
         }
@@ -218,7 +220,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            width: 100%;
+            width: 100wv;
             min-width: 20rem;
             height: 120vh;
         }
@@ -252,10 +254,7 @@
             background-repeat: no-repeat;
             bottom: 0;
             background: rgb(255, 255, 255);
-            background: linear-gradient(0deg,
-                    rgba(255, 255, 255, 0.8099614845938375) 0%,
-                    rgba(221, 109, 0, 0.5634628851540616) 2%,
-                    rgba(221, 109, 0, 0.8015581232492998) 100%);
+            background: #ff6d00;
             color: #f1f1f1;
             width: 100%;
             padding: 20px;
@@ -263,6 +262,15 @@
             padding-bottom: 100px;
             height: 500px;
             margin-bottom: 0px;
+        }
+
+        .col-md-2 {
+            flex: 0 0 auto;
+            width: 24.666667%;
+        }
+
+        .row {
+            width: auto;
         }
 
         .facebook:hover span,
@@ -291,9 +299,10 @@
         .google:hover .tooltip:before {
             background: #4885ed;
             left: 60%;
+
         }
 
-        .icon .fa fa-facebook-f::before {
+        .icon .fa.fa-facebook-f::before {
             margin-left: 13px;
         }
 
@@ -308,6 +317,11 @@
         .icon .fa.fa-youtube-play::before {
             padding-left: 8px;
         }
+
+        .icon .fa.fa-google::before {
+            padding-left: 8px;
+        }
+
 
         .wrapper .button {
             display: inline-flex;
@@ -371,9 +385,21 @@
             padding-right: 10px;
         }
 
+        .wrapper .button:nth-child(5):hover .icon {
+            background: rgb(64, 93, 230);
+            background: linear-gradient(85deg,
+
+                    rgb(35, 189, 14) 15%,
+                    rgb(29, 70, 253) 50%,
+                    rgb(226, 41, 17) 70%,
+                    rgb(255, 251, 0) 100%);
+            padding-right: 19.5px;
+        }
+
         .wrapper .button .icon i {
             font-size: 2px;
             line-height: 53px;
+
         }
 
         .wrapper .button span {
@@ -383,8 +409,10 @@
             margin-left: 5px;
         }
 
-        /* FOOTER END */
-
+        .container {
+            margin: auto;
+            width: 100%;
+        }
 
         @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
@@ -398,6 +426,35 @@
                     #cf7a18,
                     #f59f3d);
             color: white;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        button.btn {
+            border-color: #ffd181;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        button.btn:hover {
+            border-color: #ffd181;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            background-color: #ff6d00;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            position: relative;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
         }
     </style>
 </head>
@@ -424,10 +481,10 @@
                             <a class="nav-link" aria-current="page" href="carmodel.html">Vehicles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Terms and Conditions</a>
+                            <a class="nav-link">Terms</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="underconstruction.html">About
+                            <a class="nav-link" href="aboutus.html">About
                                 Us</a>
                         </li>
                         <li class="nav-item">
@@ -879,124 +936,123 @@
             </div>
         </div>
         <img class="terms" src="./ccc.jpg" alt="termsimg">
-        <footer class="footer" id="foorear">
-            <div class="container">
-                <footer class="py-5">
-                    <div class="row">
-
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Rental Car Types</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2">
-                                    <a href="#foorear" class="nav-link p-0 ">Luxury Car
-                                        Rental</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#foorear" class="nav-link p-0 ">Pickup Truck
-                                        Rental</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#foorear" class="nav-link p-0 ">Van Rental</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#foorear" class="nav-link p-0 ">SUV Rental</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#foorear" class="nav-link p-0 ">Rental Car
-                                        Sizes — Sedans</a>
-                                </li>
-                            </ul>
-                        </div>
+        
 
 
 
-                        <div class="col-md-5 offset-md-1 mb-3">
-                            <form>
-                                <h5>Subscribe to our newsletter</h5>
-                                <p>
-                                    Monthly digest of what's new and exciting
-                                    from us.
-                                </p>
-                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                    <label for="newsletter1" class="visually-hidden">Email address</label>
-                                    <input id="newsletter1" type="text" class="form-control"
-                                        placeholder="Email address" />
-                                    <button class="btn" href="#foorear" type="reset" type="submit" id="footer">
-                                        Subscribe
-                                    </button>
-
-                                </div>
-                                <br />
-                                <div class="wrapper">
-                                    <a class="button" href="#foorear">
-                                        <div class="icon"><i class="fa fa-facebook-f"
-                                                style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
-                                        <span style="color: #4400ff">Facebook</span>
-                                    </a>
-                                    <a class="button" href="#foorear">
-                                        <div class="icon"><i class="fa fa-instagram"
-                                                style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
-                                        <span style="color: #833AB4">Instagram</span>
-                                    </a>
-                                    <a class="button" href="#foorear">
-                                        <div class="icon"><i class="fa fa-twitter"
-                                                style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
-                                        <span style="color: #1DA1F2">Twitter</span>
-                                    </a>
-                                    <a class="button" href="#foorer">
-                                        <!-- /index/images/New folder/Pending/index.htmls -->
-                                        <div class="icon"><i class="fa fa-youtube-play"
-                                                style=" font-size:34px;color:rgb(255, 255, 255)"></i></div>
-                                        <span style="color: #fc0303">YouTube</span>
-                                    </a>
-
-
-
-                                </div>
-
-                            </form>
-
-                        </div>
-                        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                            <p>© 2022 G' Five | Company, Inc. All rights reserved.</p>
-                            <ul class="list-unstyled d-flex">
-                                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                            <use xlink:href="#twitter"></use>
-                                        </svg></a></li>
-                                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                            <use xlink:href="#instagram"></use>
-                                        </svg></a></li>
-                                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                            <use xlink:href="#facebook"></use>
-                                        </svg></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </footer>
-            </div>
-        </footer>
+    
+        
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script>
-        window.onscroll = function () {
-            var header = document.getElementById("header");
-            if (window.pageYOffset > 0) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        };
-    </script>
+
+<!-- =================================================== Footer Start =============================================================== -->
+<footer class="footer" id="foorear">
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Rental Car Types</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#foorear" class="nav-link p-0 ">Luxury Car
+                                Rental</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#foorear" class="nav-link p-0 ">Pickup Truck
+                                Rental</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#foorear" class="nav-link p-0 ">Van Rental</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#foorear" class="nav-link p-0 ">SUV Rental</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#foorear" class="nav-link p-0 ">Rental Car
+                                Sizes — Sedans</a>
+                        </li>
+                    </ul>
+                </div>
+                
+
+
+                <div class="col-md-5 offset-md-1 mb-3" style="margin-left: 33%;">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>
+                            Monthly digest of what's new and exciting
+                            from us.
+                        </p> 
+                            <br />
+                        <div class="wrapper">
+                            <a class="button" href="#foorear">
+                                <div class="icon"><i class="fa fa-facebook-f"
+                                        style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
+                                <span style="color: #4400ff">Facebook</span>
+                            </a>
+                            <a class="button" href="#foorear">
+                                <div class="icon"><i class="fa fa-instagram"
+                                        style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
+                                <span style="color: #833AB4">Instagram</span>
+                            </a>
+                            <a class="button" href="#foorear">
+                                <div class="icon"><i class="fa fa-twitter"
+                                        style=" font-size:40px;color:rgb(255, 255, 255)"></i></div>
+                                <span style="color: #1DA1F2">Twitter</span>
+                            </a>
+                            <a class="button" href="#foorer">
+                                <div class="icon"><i class="fa fa-youtube-play"
+                                        style=" font-size:34px;color:rgb(255, 255, 255)"></i></div>
+                                <span style="color: #fc0303">YouTube</span>
+                            </a>
+                            <a class="button" href="#foorear">
+                                <div class="icon">
+                                    <i class="fa fa-google" style="font-size:40px;color:rgb(255, 255, 255)"></i>
+                                </div>
+                                <span style="color: #176af0">Google</span>
+                            </a>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2022 G' Five | Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+</footer>
+<!-- =================================================== Footer End =============================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<script>
+    window.onscroll = function () {
+        var header = document.getElementById("header");
+        if (window.pageYOffset > 0) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    };
+</script>
 
 </body>
 

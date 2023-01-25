@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.port": 5501
+    "cSpell.ignoreWords": [
+        "cpath",
+        "csvg",
+        "footheader",
+        "rentnow",
+        "slideimg"
+    ]
 }
