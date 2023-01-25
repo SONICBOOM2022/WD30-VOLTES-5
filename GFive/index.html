@@ -53,7 +53,7 @@
         }
 
         button {
-            width: 140px;
+            width: 170px;
             padding: 10px;
             text-align: center;
             cursor: pointer;
@@ -249,7 +249,7 @@
 
         .content2 {
             width: 95%;
-            margin-top: 100px;
+            margin-top: 250px;
             text-align: center;
             color: #fff;
             display: flex;
@@ -293,7 +293,7 @@
         }
 
         .rentnow {
-            line-height: 53px;
+            line-height: 52px;
             font-weight: bold;
             font-size: 16px;
             color: #ff6d00;
@@ -504,7 +504,20 @@
             text-align: center;
         }
 
+        button.btn {
+            border-color: #ffd181;
+            border-radius: 10px;
+            color: #fff;
+        }
 
+        button.btn:hover {
+            border-color: #ffd181;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            background-color: #ff6d00;
+            letter-spacing: 1px;
+        }
 
         .content {
             position: relative;
@@ -686,13 +699,7 @@
                             </li>
                         </ul>
                     </div>
-                    Validation
-                    <form id="email-form">
-                        <label for="email">Enter Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Email address">
-                        <button type="submit">Verify</button>
-                    </form>
-                    <div id="result"></div>
+                    
 
 
                     <div class="col-md-5 offset-md-1 mb-3">
@@ -702,15 +709,14 @@
                                 Monthly digest of what's new and exciting
                                 from us.
                             </p>
-                            <!-- <div id="email-form" class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                <label for="email" class="visually-hidden">Email address</label>
-                                <input id="email" type="email" name="email" required class="form-control" placeholder="Email address" />
-                                <button class="btn" href="#foorear" type="reset" type="submit" id="footer">
-                                    Subscribe
-                                </button>
-                            </div>
-                            <div id="result"></div> -->
-                            <br />
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address" required/>
+                                    <button class="btn" href="#foorear" type="reset" id="footer">
+                                        Subscribe
+                                    </button>
+                                </div>    
+                                <br />
                             <div class="wrapper">
                                 <a class="button" href="#foorear">
                                     <div class="icon"><i class="fa fa-facebook-f"
