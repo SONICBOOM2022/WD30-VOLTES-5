@@ -6,15 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G'Five Rentals</title>
-
-    <!-- <link rel="stylesheet" href="./images/New folder/Pending/index.html"> -->
-    <!-- <link rel="stylesheet" href="./images/New folder/Pending/indexVIP .html"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="./index/images/New folder/Pending/indexVIP .html"> -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
@@ -255,7 +249,7 @@
 
         .content2 {
             width: 95%;
-            margin-top: 100px;
+            margin-top: 250px;
             text-align: center;
             color: #fff;
             display: flex;
@@ -299,7 +293,7 @@
         }
 
         .rentnow {
-            line-height: 53px;
+            line-height: 52px;
             font-weight: bold;
             font-size: 16px;
             color: #ff6d00;
@@ -510,7 +504,20 @@
             text-align: center;
         }
 
+        button.btn {
+            border-color: #ffd181;
+            border-radius: 10px;
+            color: #fff;
+        }
 
+        button.btn:hover {
+            border-color: #ffd181;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            background-color: #ff6d00;
+            letter-spacing: 1px;
+        }
 
         .content {
             position: relative;
@@ -518,6 +525,7 @@
             text-align: center;
             background-color: white;
         }
+
     </style>
 
 </head>
@@ -536,8 +544,8 @@
                                 class="d-inline-block align-text-top">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                            data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -692,31 +700,24 @@
                             </li>
                         </ul>
                     </div>
-                    Validation
-                    <form id="email-form">
-                        <label for="email">Enter Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Email address">
-                        <button type="submit">Verify</button>
-                    </form>
-                    <div id="result"></div>
+                    
 
 
-                    <div class="col-md-5 offset-md-1 mb-3">
+                    <div class="col-md-5 offset-md-1 mb-3" style="margin-left: 33%;">
                         <form>
                             <h5>Subscribe to our newsletter</h5>
                             <p>
                                 Monthly digest of what's new and exciting
                                 from us.
                             </p>
-                            <!-- <div id="email-form" class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                <label for="email" class="visually-hidden">Email address</label>
-                                <input id="email" type="email" name="email" required class="form-control" placeholder="Email address" />
-                                <button class="btn" href="#foorear" type="reset" type="submit" id="footer">
-                                    Subscribe
-                                </button>
-                            </div>
-                            <div id="result"></div> -->
-                            <br />
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address" required/>
+                                    <button class="btn" href="#foorear" type="reset" id="footer">
+                                        Subscribe
+                                    </button>
+                                </div>    
+                                <br />
                             <div class="wrapper">
                                 <a class="button" href="#foorear">
                                     <div class="icon"><i class="fa fa-facebook-f"
@@ -734,7 +735,6 @@
                                     <span style="color: #1DA1F2">Twitter</span>
                                 </a>
                                 <a class="button" href="#foorer">
-                                    <!-- /index/images/New folder/Pending/index.htmls -->
                                     <div class="icon"><i class="fa fa-youtube-play"
                                             style=" font-size:34px;color:rgb(255, 255, 255)"></i></div>
                                     <span style="color: #fc0303">YouTube</span>
@@ -798,8 +798,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    <script src="./Validation/validation.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
         window.onscroll = function () {
             var header = document.getElementById("header");
