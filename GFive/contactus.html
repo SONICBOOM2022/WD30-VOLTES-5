@@ -571,16 +571,16 @@
   <div class="container">
     <form class="row g-3 w-75 mx-auto" id="contact-form" onsubmit="sendEmail(); reset(); return false;">
       <div class="col-md-6" id="name">
-        <input type="text" class="form-control" placeholder="Full Name">
+        <input type="text" class="form-control" placeholder="Full Name" required>
       </div>
       <div class="col-md-6">
-        <input type="email" class="form-control" id="email" placeholder="Email">
+        <input type="email" class="form-control" id="email" placeholder="Email" required>
       </div>
       <div class="col-md-6" id="subject">
-        <input type="text" class="form-control" placeholder="Subject">
+        <input type="text" class="form-control" placeholder="Subject" required>
       </div>
       <div class="col-md-6" id="number">
-        <input type="text" class="form-control" placeholder="Phone Number">
+        <input type="text" class="form-control" placeholder="Phone Number" required>
       </div>
       <div class="col-12" id="message">
         <textarea class="form-control" placeholder="Your message" style="height: 200px"></textarea>
