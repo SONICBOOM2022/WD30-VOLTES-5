@@ -569,9 +569,9 @@
     <p>Please contact us via the following form. We will reply within 24 hrs.</p>
   </div>
   <div class="container">
-    <form class="row g-3 w-75 mx-auto" id="contact-form" onsubmit="sendEmail(); reset(); return false;">
+    <form class="row g-3 w-75 mx-auto" id="contact-form" onsubmit="return validateForm()">
       <div class="col-md-6" id="name">
-        <input type="text" class="form-control" placeholder="Full Name" required>
+        <input type="text" class="form-control" id="fName" placeholder="Full Name" required>
       </div>
       <div class="col-md-6">
         <input type="email" class="form-control" id="email" placeholder="Email" required>
@@ -727,22 +727,9 @@
       }
     };
   </script>
-  <script>
-    function sendEmail() {
-      Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "marlowetan2023@gmail.com",
-        Password: "00C5FDDDFA8202D2E47F02316F75E4A5E5C8",
-        To: 'marlowetan2023@gmail.com',
-        From: document.getElementById("email").value,
-        Subject: "Contact form",
-        Body: "My body"
-      }).then(
-        message => alert(message)
-      );
-    }
-  </script>
+  
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
