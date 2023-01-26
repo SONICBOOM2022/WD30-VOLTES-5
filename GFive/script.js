@@ -15,6 +15,18 @@ addEventListener("click", () => {
 
 }))
 
+const nameRegex = /^[a-zA-Z ]+$/;
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const subjectRegex = /^[a-zA-Z ]+$/;
+const numberRegex = /^[0-9]{10}$/;
+const messageRegex = /^(.|\n)+$/;
+
+const validateName = (name) => nameRegex.test(name);
+const validateEmail = (email) => emailRegex.test(email);
+const validateSubject = (subject) => subjectRegex.test(subject);
+const validateNumber = (number) => numberRegex.test(number);
+const validateMessage = (message) => messageRegex.test(message);
+
 function validateForm() {
     // Get input values
     const name = document.getElementById("fName").value;
@@ -23,31 +35,23 @@ function validateForm() {
     const number = document.getElementById("number").value;
     const message = document.getElementById("message").value;
   
-    // Define regular expressions
-    const nameRegex = /^[a-zA-Z ]+$/;
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const subjectRegex = /^[a-zA-Z ]+$/;
-    const numberRegex = /^[0-9]{10}$/;
-    const messageRegex = /^(.|\n)+$/;
-  
-    // Validate input
-    if (!nameRegex.test(name)) {
+    if (!validateName(name)) {
       alert("Please enter a valid name.");
       return false;
     }
-    if (!emailRegex.test(email)) {
+    if (!validateEmail(email)) {
       alert("Please enter a valid email address.");
       return false;
     }
-    if (!subjectRegex.test(subject)) {
+    if (!validateSubject(subject)) {
       alert("Please enter a valid subject.");
       return false;
     }
-    if (!numberRegex.test(number)) {
+    if (!validateNumber(number)) {
       alert("Please enter a valid phone number.");
       return false;
     }
-    if (!messageRegex.test(message)) {
+    if (!validateMessage(message)) {
       alert("Please enter a message.");
       return false;
     }
@@ -56,8 +60,6 @@ function validateForm() {
     alert("Form submitted successfully!");
     return true;
   }
-
-
 
 // function sendEmail() {
 //     Email.send({
