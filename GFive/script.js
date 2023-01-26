@@ -64,16 +64,16 @@ function validateForm() {
     return true;
   }
 
-function sendEmail() {
-    Email.send({
-      Host: "smtp.elasticemail.com",
-      Username: "marlowetan2023@gmail.com",
-      Password: "00C5FDDDFA8202D2E47F02316F75E4A5E5C8",
-      To: 'marlowetan2023@gmail.com',
-      From: document.getElementById("email").value,
-      Subject: "Contact form",
-      Body: "My body"
-    }).then(
-      message => alert(message)
-    );
-  }
+// function sendEmail() {
+//     Email.send({
+//       Host: "smtp.elasticemail.com",
+//       Username: "marlowetan2023@gmail.com",
+//       Password: "00C5FDDDFA8202D2E47F02316F75E4A5E5C8",
+//       To: 'marlowetan2023@gmail.com',
+//       From: document.getElementById("email").value,
+//       Subject: "Contact form",
+//       Body: "My body"
+//     }).then(
+//       message => alert(message)
+//     );
+//   }
