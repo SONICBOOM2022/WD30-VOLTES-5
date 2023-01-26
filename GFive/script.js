@@ -28,7 +28,7 @@ const validateNumber = (number) => numberRegex.test(number);
 const validateMessage = (message) => messageRegex.test(message);
 
 function validateForm() {
-    // Get input values
+    
     const name = document.getElementById("fName").value;
     const email = document.getElementById("email").value;
     const subject = document.getElementById("subject").value;
@@ -56,7 +56,7 @@ function validateForm() {
       return false;
     }
   
-    // If all input is valid, submit the form
+    
     alert("Form submitted successfully!");
     return true;
   }
